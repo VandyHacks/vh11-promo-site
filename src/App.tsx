@@ -1,18 +1,13 @@
 import React from "react";
-import Banner from "./Banner";
-import JoinButton from "./JoinButton";
-import FlagButton from "./FlagButton";
+import Hero from "./hero/Hero";
+import { MantineProvider } from "@mantine/core";
 
 function App() {
     return (
         <>
-            <Banner />
-            <JoinButton />
-            <FlagButton name="About" />
-            <FlagButton name="FAQ" />
-            <FlagButton name="Sponsors" />
-            <FlagButton name="Schedule" />
-
+            <MantineProvider>
+                <Hero />
+            </MantineProvider>
         </>
     );
 }
