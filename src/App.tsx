@@ -1,14 +1,15 @@
 import React from "react";
+import Hero from "./hero/Hero";
+import { MantineProvider } from "@mantine/core";
 
 function App() {
-  return (
-    <div>
-      <header>hello</header>
-        <div>
-            hewwo
-        </div>
-    </div>
-  );
+    return (
+        <>
+            <MantineProvider>
+                <Hero />
+            </MantineProvider>
+        </>
+    );
 }
 
 export default App;
