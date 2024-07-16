@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @font-face {
     font-family: "Formula1";
     src: local("Formula1"),
@@ -22,7 +25,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Formula1", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #a1a1a1;
+    background-color: #FFFFFF;
 }
 
 code {
@@ -48,4 +51,52 @@ code {
     background-attachment: fixed;
     background-size: 95% auto;
     background-position: center;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(-10%); }
+    60% { transform: translateX(115%); }
+    100% { transform: translateX(115%); }
+}
+
+@keyframes marquee_slow {
+    0% { transform: translateX(-10%); }
+    65% { transform: translateX(115%); }
+    100% { transform: translateX(115%); }
+}
+
+@keyframes danica {
+    0% { transform: translateY(0%); }
+    50% { transform: translateY(2%); }
+    100% { transform: translateY(0%); }
+}
+
+.m_green {
+    animation: marquee 2s ease-out infinite;
+}
+.m_red {
+    animation: marquee_slow 2s ease-out infinite;
+}
+.m_blue {
+    animation: marquee 12s linear infinite;
+}
+.m_bumping {
+    animation: danica .15s ease-out infinite;
+}
+
+.hero_text {
+    font-family: "Courier Prime", monospace;
+    padding-top: 20%;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 30px;
+    color: #555555;
+}
+.hero_date {
+    font-family: "Courier Prime", monospace;
+    margin-top: -1.5%;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    color: #555555;
 }

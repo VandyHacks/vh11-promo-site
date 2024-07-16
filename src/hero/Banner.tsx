@@ -1,7 +1,7 @@
 import React from "react";
 import { Image, Flex, Text } from "@mantine/core";
 
-import VHLogo from "../assets/VH_Logo_Without_Text_Dark.png";
+import VHLogo from "../assets/VHLogo.png";
 import JoinButton from "./JoinButton";
 
 function Banner() {
