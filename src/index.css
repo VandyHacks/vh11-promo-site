@@ -61,7 +61,7 @@ code {
 
 @keyframes marquee_slow {
     0% { transform: translateX(-10%); }
-    65% { transform: translateX(115%); }
+    70% { transform: translateX(115%); }
     100% { transform: translateX(115%); }
 }
 

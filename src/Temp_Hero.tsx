@@ -26,11 +26,9 @@ function Temp_Hero() {
                 >Vanderbilt's student-run hackathon</Text>
                 <Text className="hero_date">September 27-29th</Text>
 
-                <Button
-                    variant="filled"
-                    size="xl"
-                    c="red"
-                >Register</Button>
+                <Button color="gray" radius="md" size="xl">
+                    Register
+                </Button>
 
             </Flex>
             <div className="m_green">
