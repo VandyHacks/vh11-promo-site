@@ -1,13 +1,14 @@
 import React from "react";
-import {Image, Flex, Text, Button} from "@mantine/core";
-import { useViewportSize } from "@mantine/hooks";
+import {Image, Flex, Text, Button, Modal, Code} from "@mantine/core";
+import {useDisclosure} from "@mantine/hooks";
 import VHLogo from "./assets/VHlogo_racing.svg";
 import ducky_red from "./assets/ducky_red.svg";
 import ducky_blue from "./assets/ducky_blue.svg";
 import ducky_green from "./assets/ducky_green.svg";
+import RegistrationForm from "./RegistrationForm";
 
 function Temp_Hero() {
-    const {height, width} = useViewportSize();
+    const [opened, {open, close}] = useDisclosure(false);
 
     return (
         <>
@@ -22,28 +23,27 @@ function Temp_Hero() {
                 gap="sm"
             >
                 <Image w="60vh" src={VHLogo} alt="VandyHacks Logo"/>
-                <Text className="hero_text"
-                >Vanderbilt's student-run hackathon</Text>
+                <Text className="hero_text">Vanderbilt's student-run hackathon</Text>
                 <Text className="hero_date">September 27-29th</Text>
 
-                <Button color="gray" radius="md" size="xl">
+                <Button onClick={open}>
                     Register
                 </Button>
-
             </Flex>
             <div className="m_green">
-                <Image pos="relative" top="-50vh" w="18vh" src={ducky_green} alt="Janice"/>
+                <Image pos="relative" top="5vh" w="18vh" src={ducky_green} alt="Janice"/>
             </div>
             <div className="m_red">
-                <Image pos="relative" top="-53vh" w="18vh" src={ducky_red} alt="Jennifer"/>
+                <Image pos="relative" top="8vh" w="18vh" src={ducky_red} alt="Jennifer"/>
             </div>
             <div className="m_bumping">
-            <div className="m_blue">
-                <Image pos="relative" top="-56vh" w="18vh" src={ducky_blue} alt="Jessica"/>
+                <div className="m_blue">
+                    <Image pos="relative" top="11vh" w="18vh" src={ducky_blue} alt="Jessica"/>
+                </div>
             </div>
-            </div>
-
-
+            <Modal opened={opened} onClose={close} title="Register" centered>
+                <RegistrationForm />
+            </Modal>
         </>
     );
 }
