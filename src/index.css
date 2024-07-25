@@ -53,16 +53,21 @@ code {
     background-position: center;
 }
 
-@keyframes marquee {
-    0% { transform: translateX(-10%); }
-    60% { transform: translateX(115%); }
-    100% { transform: translateX(115%); }
+@keyframes marquee_green {
+    0% { transform: translateX(-90%); }
+    60% { transform: translateX(70%); }
+    100% { transform: translateX(70%); }
 }
 
-@keyframes marquee_slow {
-    0% { transform: translateX(-10%); }
-    70% { transform: translateX(115%); }
-    100% { transform: translateX(115%); }
+@keyframes marquee_red {
+    0% { transform: translateX(-90%); }
+    70% { transform: translateX(70%); }
+    100% { transform: translateX(70%); }
+}
+
+@keyframes marquee_blue {
+    0% { transform: translateX(-90%); }
+    100% { transform: translateX(60%); }
 }
 
 @keyframes danica {
@@ -72,31 +77,74 @@ code {
 }
 
 .m_green {
-    animation: marquee 2s ease-out infinite;
+    margin-top: -1%;
+    animation: marquee_green 2s ease-out infinite;
 }
 .m_red {
-    animation: marquee_slow 2s ease-out infinite;
+    margin-top: -1.5%;
+    animation: marquee_red 2s ease-out infinite;
 }
 .m_blue {
-    animation: marquee 12s linear infinite;
+    margin-top: -1.5%;
+    animation: marquee_blue 10s linear infinite;
 }
 .m_bumping {
-    animation: danica .15s ease-out infinite;
+    animation: danica .10s ease-out infinite;
 }
 
 .hero_text {
-    font-family: "Courier Prime", monospace;
-    padding-top: 20%;
-    font-weight: 200;
+    font-family: "Helvetica", monospace;
+    margin-top: 15px;
+    font-weight: 300;
     font-style: normal;
     font-size: 30px;
     color: #555555;
 }
 .hero_date {
-    font-family: "Courier Prime", monospace;
+    font-family: "Helvetica", monospace;
     margin-top: -1.5%;
-    font-weight: 700;
-    font-style: normal;
+    margin-bottom: 1.5%;
+    font-weight: 400;
     font-size: 30px;
     color: #555555;
+}
+
+.sub_text {
+    font-family: "Verdana", monospace;
+    padding-top: 1.5%;
+    font-weight: 300;
+    font-size: 15px;
+    color: #888888;
+}
+
+.register {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 30px; /* Adjust padding for a larger button */
+    border-radius: 20px; /* Large border radius */
+    border: 2px solid #ff4848; /* Grey outline */
+    background-color: transparent; /* Transparent background */
+    color: #ff4848; /* Grey text color */
+    transition: background-color .3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.register:hover {
+    background-color: #ff4848;
+    color: white;
+}
+
+.drop_shadow {
+    position: absolute;
+    font-size: 25px;
+    padding: 15px 30px; /* Adjust padding for a larger button */
+    border-radius: 20px; /* Large border radius */
+    color: red;
+    background-color: red;
+    border: 2px solid red; /* Red outline */
+    z-index: -1;
+    transition: transform 0.2s ease-out; /* Smooth transition for movement */
+}
+
+.register:hover ~ .drop_shadow {
+    transform: translate(5px, 5px); /* Move right and down slightly on hover */
 }
