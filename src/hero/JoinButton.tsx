@@ -4,7 +4,9 @@ import { Button } from "@mantine/core";
 function JoinButton() {
   return (
     <>
-      <Button variant="filled">Join</Button>
+        <Button className="register">
+            Apply Now
+        </Button>
     </>
   );
 }
