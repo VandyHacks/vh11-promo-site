@@ -1,0 +1,64 @@
+
+@keyframes marquee_green {
+    0% { transform: translateX(-60%); }
+    70% { transform: translateX(60%); }
+    100% { transform: translateX(60%); }
+}
+
+@keyframes marquee_red {
+    0% { transform: translateX(-65%); }
+    70% { transform: translateX(60%); }
+    100% { transform: translateX(60%); }
+}
+
+@keyframes marquee_blue {
+    0% { transform: translateX(-60%); }
+    95% { transform: translateX(60%); }
+    100% { transform: translateX(60%); }
+}
+
+@keyframes danica {
+    0% { transform: translateY(0%); }
+    50% { transform: translateY(2%); }
+    100% { transform: translateY(0%); }
+}
+
+@keyframes swerve-down {
+    0% { transform: translateY(0%); }
+    50% { transform: translateY(50%); }
+    100% { transform: translateY(0%); }
+}
+
+
+@keyframes swerve-up-down {
+    0% { transform: translateY(0%); }
+    30% { transform: translateY(50%); }
+    60% { transform: translateY(-50%); }
+    100% { transform: translateY(0%); }
+}
+
+.m_green {
+    margin-top: -3%;
+    animation: marquee_green 4s ease-out infinite;
+}
+.m_red {
+    margin-top: -2.5%;
+    animation: marquee_red 4s ease-in-out infinite;
+}
+.m_blue {
+    margin-top: -2%;
+    animation: marquee_blue 10s linear infinite;
+    animation-delay: 3s;
+}
+.m_bumping {
+    animation: danica .10s ease-out infinite;
+}
+.road_curve {
+    /*animation: swerve-down 12s linear infinite;*/
+}
+
+.m_about {
+    animation: swerve-up-down 4s linear infinite, marquee_red 8s ease-in infinite;
+}
+
+

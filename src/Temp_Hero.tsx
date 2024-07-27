@@ -1,19 +1,16 @@
 import React from "react";
-import {Image, Flex, Text, Button, Modal, Code} from "@mantine/core";
-import {useDisclosure} from "@mantine/hooks";
-import VHLogo from "./assets/VHlogo_racing.svg";
-import ducky_red from "./assets/ducky_red.svg";
-import ducky_blue from "./assets/ducky_blue.svg";
-import ducky_green from "./assets/ducky_green.svg";
-import RegistrationForm from "./RegistrationForm";
+import {Image, Flex, Text} from "@mantine/core";
+import { Button } from '@mantine/core';
+import {useViewportSize} from "@mantine/hooks";
+import VHLogo from "./assets/VHlogo_XI.svg";
 
 function Temp_Hero() {
-    const [opened, {open, close}] = useDisclosure(false);
+    const {height, width} = useViewportSize();
 
     return (
         <>
             <Flex
-                top="7vh"
+                top="5vh"
                 pos="relative"
                 w="100%"
                 direction={"column"}
@@ -22,28 +19,24 @@ function Temp_Hero() {
                 ta="center"
                 gap="sm"
             >
-                <Image w="60vh" src={VHLogo} alt="VandyHacks Logo"/>
-                <Text className="hero_text">Vanderbilt's student-run hackathon</Text>
-                <Text className="hero_date">September 27-29th</Text>
+                <Image w="80vh" src={VHLogo} alt="VandyHacks Logo"/>
 
-                <Button onClick={open}>
+                <Text className="header_text">
+                    VANDYHACKS XI
+                </Text>
+                <Text className="hero_text">
+                    Vanderbilt's student-run hackathon
+                </Text>
+                <Text className="hero_text" font-weight={"600px"}>Sept. 28-29  |  Nashville, TN</Text>
+                <Button className="register">
                     Register
                 </Button>
+                <Text className="sub_text">
+                    If you want more information or are interested in sponsoring us,
+                    please contact us at <br></br> chloe.p.nixon@vanderbilt.edu and aryan.garg@vanderbilt.edu
+                </Text>
+
             </Flex>
-            <div className="m_green">
-                <Image pos="relative" top="5vh" w="18vh" src={ducky_green} alt="Janice"/>
-            </div>
-            <div className="m_red">
-                <Image pos="relative" top="8vh" w="18vh" src={ducky_red} alt="Jennifer"/>
-            </div>
-            <div className="m_bumping">
-                <div className="m_blue">
-                    <Image pos="relative" top="11vh" w="18vh" src={ducky_blue} alt="Jessica"/>
-                </div>
-            </div>
-            <Modal opened={opened} onClose={close} title="Register" centered>
-                <RegistrationForm />
-            </Modal>
         </>
     );
 }

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4c4c4c;
+        font-family: Helvetica-Light, Helvetica;
+        font-size: 56.33px;
+        font-weight: 300;
+      }
+
+      .cls-2 {
+        fill: #37bf51;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #0aa549;
+      }
+
+      .cls-4 {
+        fill: #0a9e46;
+      }
+
+      .cls-5 {
+        fill: #22b252;
+      }
+    </style>
+  </defs>
+  <g id="hero_text_stuff" data-name="hero text stuff">
+    <text class="cls-1" transform="translate(-209.92 768.34)"><tspan x="0" y="0" xml:space="preserve">Seu ih ui  n  bu ivuiguigb</tspan></text>
+  </g>
+  <g id="about">
+    <path class="cls-2" d="m-10.19,1020L-1.19,629.52c90.94-36.2,277.48-98.78,527-100.74,281.92-2.22,546.68,84.52,637,122.96l-29,379.26L-10.19,1020Z"/>
+    <path class="cls-5" d="m1959.81,733.21c0-.21-172-122.21-435-132.21-316.79-12.05-555.29,115.05-614,148.5l21.22,322.22h1027.78v-338.51Z"/>
+    <path class="cls-3" d="m21.69,1331.87l-31.98-499.2c110.1-55.98,338.75-123.25,643.4-122.99,409.7.35,744.7,98.12,891.7,182.57l-149.41,430.58-1353.72,9.04Z"/>
+    <path class="cls-4" d="m1432.81,857.65c-429.98-10.36-546.93,167.59-1000,173.35-236,3-476.25-75.97-495.28-82.73-.47-.17-.72-.25-.72-.25v619.98l2042-38c-14.33-182.2-28.67-364.4-43-546.6-204.77-97.48-377.22-122.72-503-125.75Z"/>
+  </g>
+</svg>

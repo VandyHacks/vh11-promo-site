@@ -22,10 +22,9 @@
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Formula1", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Formula1", Helvetica;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #FFFFFF;
 }
 
 code {
@@ -34,10 +33,7 @@ code {
 }
 
 .centered-text {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    justify-content: center;
 }
 
 .flag-button {
@@ -46,57 +42,53 @@ code {
 }
 
 .main-road {
-    background-image: url("./assets/main road.svg");
+    background-image: url("./assets/main_road.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 95% auto;
+    background-size: 100% auto;
     background-position: center;
 }
 
-@keyframes marquee {
-    0% { transform: translateX(-10%); }
-    60% { transform: translateX(115%); }
-    100% { transform: translateX(115%); }
+.header_text {
+    font-family: "Formula1";
+    margin: 10px;
+    font-size: 54px;
 }
 
-@keyframes marquee_slow {
-    0% { transform: translateX(-10%); }
-    70% { transform: translateX(115%); }
-    100% { transform: translateX(115%); }
-}
-
-@keyframes danica {
-    0% { transform: translateY(0%); }
-    50% { transform: translateY(2%); }
-    100% { transform: translateY(0%); }
-}
-
-.m_green {
-    animation: marquee 2s ease-out infinite;
-}
-.m_red {
-    animation: marquee_slow 2s ease-out infinite;
-}
-.m_blue {
-    animation: marquee 12s linear infinite;
-}
-.m_bumping {
-    animation: danica .15s ease-out infinite;
+.body_text {
+    margin: 0;
+    font-family: "Helvetica", monospace;
+    font-size: 30px;
+    color: #555555;
 }
 
 .hero_text {
-    font-family: "Courier Prime", monospace;
-    padding-top: 20%;
-    font-weight: 200;
+    font-weight: 300;
+    margin: 5px;
     font-style: normal;
-    font-size: 30px;
-    color: #555555;
 }
-.hero_date {
-    font-family: "Courier Prime", monospace;
-    margin-top: -1.5%;
-    font-weight: 700;
-    font-style: normal;
+
+.sub_text {
+    font-family: "Verdana", monospace;
+    padding-top: 23vh;
+    font-weight: 300;
+    font-size: 15px;
+    color: #888888;
+}
+
+.register {
+    margin-top: 20px;
     font-size: 30px;
-    color: #555555;
+    font-weight: bold;
+    padding: 15px 30px; /* Adjust padding for a larger button */
+    border-radius: 20px; /* Large border radius */
+    border: 2px solid #fc3f3f; /* Grey outline */
+    background-color: transparent; /* Transparent background */
+    color: #fc3f3f; /* Grey text color */
+    transition: background-color .3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.register:hover {
+    background-color: #fc3f3f;
+    color: white;
 }
