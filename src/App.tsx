@@ -17,8 +17,8 @@ function App() {
                 <Hero />
                 <About />
                 <Schedule />
-                <FAQ />
                 <Speakers />
+                <FAQ />
                 <Sponsors />
             </MantineProvider>
         </>

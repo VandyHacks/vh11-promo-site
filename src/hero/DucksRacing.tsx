@@ -22,14 +22,14 @@ function DucksRacing() {
             >
                 <div className="road_curve">
                     <div className="m_green">
-                        <Image pos="relative" w="19vh" src={ducky_green} alt="Janice"/>
+                        <Image pos="relative" w="20vh" src={ducky_green} alt="Janice"/>
                     </div>
                     <div className="m_red">
-                        <Image pos="relative" w="19vh" src={ducky_red} alt="Jennifer"/>
+                        <Image pos="relative" w="20vh" src={ducky_red} alt="Jennifer"/>
                     </div>
                     <div className="m_bumping">
                         <div className="m_blue">
-                            <Image pos="relative" w="19vh" src={ducky_blue} alt="Jessica"/>
+                            <Image pos="relative" w="20vh" src={ducky_blue} alt="Jessica"/>
                         </div>
                     </div>
                 </div>

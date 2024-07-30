@@ -8,7 +8,7 @@ function Banner() {
     return (
         <>
             <Flex
-                top="4vh"
+                top="3vh"
                 pos="absolute"
                 w="100%"
                 direction={"column"}
@@ -24,7 +24,7 @@ function Banner() {
                 </Text>
 
                 <div className="body_text">
-
+                    <Text className="hero_text" font-weight={"600px"}>Vanderbilt's Collegiate Hackathon</Text>
                     <Text className="hero_text" font-weight={"600px"}>Sept. 28-29 | Nashville, TN</Text>
 
                     <JoinButton/>

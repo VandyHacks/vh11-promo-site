@@ -10,7 +10,10 @@ function Schedule() {
         <>
 
             <div>
-                <Image w="100%" src={schedule_bg} alt="schedule background"/>
+                <div className="header_text">
+                    Sedule
+                </div>
+                <Image w="200vh" src={schedule_bg} alt="schedule background"/>
 
             </div>
         </>

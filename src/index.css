@@ -80,12 +80,12 @@ code {
     margin-top: 20px;
     font-size: 30px;
     font-weight: bold;
-    padding: 15px 30px; /* Adjust padding for a larger button */
-    border-radius: 20px; /* Large border radius */
-    border: 2px solid #fc3f3f; /* Grey outline */
-    background-color: transparent; /* Transparent background */
-    color: #fc3f3f; /* Grey text color */
-    transition: background-color .3s, color 0.3s; /* Smooth transition for hover effect */
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: 2px solid #fc3f3f;
+    background-color: transparent;
+    color: #fc3f3f;
+    transition: background-color .3s, color 0.3s;
 }
 
 .register:hover {
