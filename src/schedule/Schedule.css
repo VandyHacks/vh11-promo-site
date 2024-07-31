@@ -1,0 +1,68 @@
+:root {
+    --events-bg-color: #cfcdcb;
+    --events-primary-color: #1f1f1f;
+    --events-text-color: #1f1f1f;
+    --important-bg-color: #faccd5;
+    --important-primary-color: #e4002b;
+    --important-text-color: #bc0628;
+    --workshops-bg-color: #cce4f3;
+    --workshops-primary-color: #007ac2;
+    --workshops-text-color: #0668a1;
+    --food-bg-color: #fef7ce;
+    --food-primary-color: #f8d60c;
+    --food-text-color: #f8d60c;
+}
+
+
+
+.round {
+    border-radius: 500px;
+}
+
+.main-container {
+    border-radius: 20px;
+}
+
+.events-main {
+    border: solid 2px var(--events-primary-color);
+    background-color: var(--events-bg-color);
+    color: var(--events-text-color);
+}
+
+.events-time {
+    color: white;
+    background-color: var(--events-text-color);
+}
+
+.important-main {
+    border: solid 2px var(--important-primary-color);
+    background-color: var(--important-bg-color);
+    color: var(--important-text-color);
+}
+
+.important-time {
+    color: white;
+    background-color: var(--important-text-color);
+}
+
+.workshops-main {
+    border: solid 2px var(--workshops-primary-color);
+    background-color: var(--workshops-bg-color);
+    color: var(--workshops-text-color);
+}
+
+.workshops-time {
+    color: white;
+    background-color: var(--workshops-text-color);
+}
+
+.food-main {
+    border: solid 2px var(--food-primary-color);
+    background-color: var(--food-bg-color);
+    color: var(--food-text-color);
+}
+
+.food-time {
+    color: white;
+    background-color: var(--food-text-color);
+}

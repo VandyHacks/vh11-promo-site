@@ -1,6 +1,9 @@
 import React from "react";
+import '@mantine/core/styles.css';
+
 import "./about/About.css";
 import "./hero/DuckAnimations.css";
+import "./schedule/Schedule.css";
 import Hero from "./hero/Hero";
 import Temp_Hero from "./Temp_Hero";
 import About from "./about/About";
@@ -14,8 +17,8 @@ function App() {
     return (
         <>
             <MantineProvider>
-                <Hero />
-                <About />
+                {/*<Hero />*/}
+                {/*<About />*/}
                 <Schedule />
                 <FAQ />
                 <Speakers />
