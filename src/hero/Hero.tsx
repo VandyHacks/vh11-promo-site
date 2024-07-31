@@ -16,10 +16,12 @@ function Hero() {
                 <Banner />
                 <Image
                     pos="absolute"
-                    top="75vh"
+                    top="71.5vh"
                     w="207vh"
+                    h="50px"
                     src={Road}
                     alt="Road 4 duck 2 race"
+                    style={{overflow: "hidden"}}
                 />
                 <DucksRacing />
             </div>

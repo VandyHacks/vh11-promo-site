@@ -19,7 +19,7 @@
 
 @keyframes danica {
     0% { transform: translateY(0%); }
-    50% { transform: translateY(2%); }
+    50% { transform: translateY(1.5%); }
     100% { transform: translateY(0%); }
 }
 
@@ -31,24 +31,23 @@
 
 
 @keyframes swerve-up-down {
-    0% { transform: translateY(0%); }
-    30% { transform: translateY(50%); }
-    60% { transform: translateY(-50%); }
-    100% { transform: translateY(0%); }
+    0% { transform: translateY(0px); }
+    20% { transform: translateY(-30px); }
+    50% { transform: translateY(30px); }
+    100% { transform: translateY(0px); }
 }
 
 .m_green {
-    margin-top: -3%;
+    margin-top: -35px;
     animation: marquee_green 4s ease-out infinite;
 }
 .m_red {
-    margin-top: -2.5%;
+    margin-top: -47px;
     animation: marquee_red 4s ease-in-out infinite;
 }
 .m_blue {
-    margin-top: -2%;
-    animation: marquee_blue 10s linear infinite;
-    animation-delay: 3s;
+    margin-top: -55px;
+    animation: marquee_blue 12s linear infinite;
 }
 .m_bumping {
     animation: danica .10s ease-out infinite;
@@ -58,7 +57,11 @@
 }
 
 .m_about {
-    animation: swerve-up-down 4s linear infinite, marquee_red 8s ease-in infinite;
+    animation: marquee_red 6s ease-in-out infinite;
+}
+
+.m_about_curve {
+    animation: swerve-up-down 4s linear infinite
 }
 
 
