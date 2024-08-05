@@ -1,6 +1,12 @@
 import React from "react";
 import { Image, Flex, Text, Button, Divider, Title } from "@mantine/core";
-import { IconMapPinFilled, IconStar, IconSettings, IconShare, IconCheck } from "@tabler/icons-react";
+import {
+    IconMapPinFilled,
+    IconStar,
+    IconSettings,
+    IconShare,
+    IconCheck,
+} from "@tabler/icons-react";
 
 interface EventProps {
     eventName: string | undefined;
@@ -14,13 +20,13 @@ function Event(props: EventProps) {
     function matchIcon(icon: string | undefined) {
         switch (icon) {
             case "check":
-                return <IconCheck />
+                return <IconCheck />;
             case "star":
-                return <IconStar />
+                return <IconStar />;
             case "gear":
-                return <IconSettings />
+                return <IconSettings />;
             case "share":
-                return <IconShare />
+                return <IconShare />;
             default:
                 return;
                 break;
@@ -29,29 +35,36 @@ function Event(props: EventProps) {
     return (
         <>
             <Flex
-                align="center"
+                align="stretch"
                 justify="space-between"
                 className={`round ${props.category}-main`}
-                p="xs"
             >
                 <Flex align="center" gap="md">
                     {props.icon && (
-                        matchIcon(props.icon)
+                        <Flex
+                            className={`${props.category}-icon`}
+                            mx="xs"
+                            my="xs"
+                        >
+                            {matchIcon(props.icon)}
+                        </Flex>
                     )}
                     <Text>{props.eventName}</Text>
                 </Flex>
                 <Flex gap="lg" align="center">
                     {props.location && (
-                        <Flex align="center" gap="md">
-                            <IconMapPinFilled />
+                        <Flex align="center" gap="xs">
+                            <IconMapPinFilled
+                                className={`${props.category}-location`}
+                            />
                             <Text>{props.location}</Text>
                         </Flex>
                     )}
 
                     <Flex
                         className={`round ${props.category}-time`}
-                        px="md"
-                        py="xs"
+                        align="center"
+                        justify="center"
                     >
                         <Text>{props.timeRange}</Text>
                     </Flex>

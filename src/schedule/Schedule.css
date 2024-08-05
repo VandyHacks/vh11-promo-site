@@ -1,19 +1,17 @@
 :root {
-    --events-bg-color: #cfcdcb;
-    --events-primary-color: #1f1f1f;
-    --events-text-color: #1f1f1f;
+    --events-bg-color: #ccecda;
+    --events-primary-color: #007e36;
+    --events-text-color: #005122;
     --important-bg-color: #faccd5;
-    --important-primary-color: #e4002b;
-    --important-text-color: #bc0628;
+    --important-primary-color: #b60022;
+    --important-text-color: #750016;
     --workshops-bg-color: #cce4f3;
-    --workshops-primary-color: #007ac2;
-    --workshops-text-color: #0668a1;
+    --workshops-primary-color: #00629b;
+    --workshops-text-color: #003e63;
     --food-bg-color: #fef7ce;
     --food-primary-color: #f8d60c;
-    --food-text-color: #f8d60c;
+    --food-text-color: #635605;
 }
-
-
 
 .round {
     border-radius: 500px;
@@ -31,7 +29,26 @@
 
 .events-time {
     color: white;
-    background-color: var(--events-text-color);
+    background-color: var(--events-primary-color);
+    height: 100%;
+    width: 10rem;
+    text-align: center;
+}
+
+.events-icon {
+    border-radius: 50%;
+    background-color: var(--events-primary-color);
+    color: var(--events-bg-color);
+    padding: 5px;
+}
+
+.events-location {
+    color: var(--events-primary-color);
+}
+
+.events-indicator {
+    color: white;
+    background-color: var(--events-primary-color);
 }
 
 .important-main {
@@ -42,7 +59,26 @@
 
 .important-time {
     color: white;
-    background-color: var(--important-text-color);
+    background-color: var(--important-primary-color);
+    height: 100%;
+    width: 10rem;
+    text-align: center;
+}
+
+.important-icon {
+    border-radius: 50%;
+    background-color: var(--important-primary-color);
+    color: var(--important-bg-color);
+    padding: 5px;
+}
+
+.important-location {
+    color: var(--important-primary-color);
+}
+
+.important-indicator {
+    color: white;
+    background-color: var(--important-primary-color);
 }
 
 .workshops-main {
@@ -53,7 +89,26 @@
 
 .workshops-time {
     color: white;
-    background-color: var(--workshops-text-color);
+    background-color: var(--workshops-primary-color);
+    height: 100%;
+    width: 10rem;
+    text-align: center;
+}
+
+.workshops-icon {
+    border-radius: 50%;
+    background-color: var(--workshops-primary-color);
+    color: var(--workshops-bg-color);
+    padding: 5px;
+}
+
+.workshops-location {
+    color: var(--workshops-primary-color);
+}
+
+.workshops-indicator {
+    color: white;
+    background-color: var(--workshops-primary-color);
 }
 
 .food-main {
@@ -63,6 +118,25 @@
 }
 
 .food-time {
-    color: white;
-    background-color: var(--food-text-color);
+    color: var(--food-text-color);
+    background-color: var(--food-primary-color);
+    height: 100%;
+    width: 10rem;
+    text-align: center;
+}
+
+.food-icon {
+    border-radius: 50%;
+    background-color: var(--food-primary-color);
+    color: var(--food-bg-color);
+    padding: 5px;
+}
+
+.food-location {
+    color: var(--food-primary-color);
+}
+
+.food-indicator {
+    color: var(--food-text-color);
+    background-color: var(--food-primary-color);
 }
