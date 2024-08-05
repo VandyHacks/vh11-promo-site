@@ -31,7 +31,7 @@ function Banner() {
 
                     <Text className="sub_text">
                         If you want more information or are interested in sponsoring us,
-                        please contact us at <br></br> chloe.p.nixon@vanderbilt.edu and aryan.garg@vanderbilt.edu
+                        please contact chloe.p.nixon@vanderbilt.edu
                     </Text>
                 </div>
             </Flex>

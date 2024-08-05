@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="logos_png" data-name="logos, png" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #333232;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #ff4a4a;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" width="1080" height="1080" rx="273.52" ry="273.52"/>
+  <g>
+    <polygon class="cls-2" points="21.78 306 371.29 306 479 623.75 678.21 306 805.66 306 662.28 527.61 791.5 527.61 934.87 306 1054.47 306 757.14 773.62 636.23 773.62 743.71 606.75 614.49 606.75 455.96 856 291.64 392.18 52.68 392.18 21.78 306"/>
+    <rect class="cls-1" x="69.3" y="426.27" width="111.53" height="111.53"/>
+    <rect class="cls-1" x="180.83" y="537.8" width="111.53" height="111.53"/>
+    <rect class="cls-1" x="69.3" y="649.4" width="111.53" height="111.53"/>
+    <polygon class="cls-1" points="336.93 649.4 294.7 649.4 294.7 760.93 374.94 760.93 336.93 649.4"/>
+  </g>
+</svg>
