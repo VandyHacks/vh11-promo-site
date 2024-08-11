@@ -8,6 +8,8 @@
     --workshops-bg-color: #cce4f3;
     --workshops-primary-color: #00629b;
     --workshops-text-color: #003e63;
+    --workshops-difficulty-text-color: #0668a1;
+    --workshops-difficulty-bg-color: #99cae7;
     --food-bg-color: #fef7ce;
     --food-primary-color: #f8d60c;
     --food-text-color: #635605;
@@ -109,6 +111,11 @@
 .workshops-indicator {
     color: white;
     background-color: var(--workshops-primary-color);
+}
+
+.workshops-difficulty {
+    color: var(--workshops-difficulty-text-color);
+    background-color: var(--workshops-difficulty-bg-color);
 }
 
 .food-main {

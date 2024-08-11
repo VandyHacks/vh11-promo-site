@@ -14,6 +14,7 @@ interface EventProps {
     location: string | undefined;
     timeRange: string | undefined;
     category: string | undefined; // events, important, workshops, food
+    difficulty: string | undefined; // Easy, Medium, Hard
 }
 
 function Event(props: EventProps) {
@@ -50,6 +51,7 @@ function Event(props: EventProps) {
                         </Flex>
                     )}
                     <Text>{props.eventName}</Text>
+                    {props.difficulty && <Flex py="3px" px="xs" className="round workshops-difficulty">{props.difficulty}</Flex>}
                 </Flex>
                 <Flex gap="lg" align="center">
                     {props.location && (

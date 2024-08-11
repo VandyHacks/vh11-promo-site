@@ -3,13 +3,13 @@ import { Image, Flex, Text, Button, Divider, Title } from "@mantine/core";
 import { useViewportSize } from "@mantine/hooks";
 import Event from "./Event";
 
-function Day1() {
+function Day2() {
     const { height, width } = useViewportSize();
 
     return (
         <>
             <Event
-                eventName="Check In"
+                eventName="Check In Day 2"
                 icon="check"
                 location="The Wondry 1st Floor"
                 timeRange="9:30am-11:30pm"
@@ -38,7 +38,7 @@ function Day1() {
                 location="ESB 048"
                 timeRange="12:00pm-3:00pm"
                 category="workshops"
-                difficulty="Easy"
+                difficulty=""
             />
             <Event
                 eventName="Scavenger Hunt"
@@ -52,4 +52,4 @@ function Day1() {
     );
 }
 
-export default Day1;
+export default Day2;
