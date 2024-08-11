@@ -17,8 +17,9 @@ function Hero() {
                 <Image
                     pos="absolute"
                     top="71.5vh"
-                    w="207vh"
-                    h="50px"
+
+                    h="23.5vh"
+
                     src={Road}
                     alt="Road 4 duck 2 race"
                     style={{overflow: "hidden"}}
