@@ -1,4 +1,4 @@
-.speakers-container {
+.faq-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,33 +8,33 @@
 
 .billboard {
     background-color: #FCF8F5;
-    border-radius: 20px;
-    padding: 60px 40px; 
+    border-width: 10px;
+    padding: 60px 40px;
     position: relative;
     width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
     min-height: 600px;
 }
 
 .billboard::after,
 .billboard::before {
-  content: '';
-  position: absolute;
-  bottom: -40px;
-  width: 40px;
-  height: 40px;
-  background-color: #FCF8F5;
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    width: 40px;
+    height: 40px;
+    background-color: #FCF8F5;
 }
 
 .billboard::after {
-  left: 25%;
+    left: 25%;
 }
 
 .billboard::before {
-  right: 25%;
+    right: 25%;
 }
 
 .sub_textspeaker {
@@ -59,22 +59,22 @@
     color: #FCF8F5;
 }
 
-.header_text {
+.faq_header_text {
     font-family: "Formula1", sans-serif;
     font-size: 54px;
     margin-bottom: 40px;
     text-align: center;
-    color: #1F1F1F; 
+    color: #1F1F1F;
 }
 
-.speaker-panes {
+.faq-panes {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
-.speaker-image-placeholder {
+.faq-image-placeholder {
     width: calc(100% - 40px);
     padding-bottom: calc(100% - 40px);
     background-color: #FCF8F5;
@@ -83,7 +83,7 @@
     position: relative;
 }
 
-.speaker-pane {
+.faq-pane {
     background-color: #2A2A2A;
     border-radius: 10px;
     padding: 20px;

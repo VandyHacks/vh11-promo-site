@@ -13,7 +13,7 @@ function Schedule() {
                 <div className="header_text">
                     Sedule
                 </div>
-                <Image w="200vh" src={schedule_bg} alt="schedule background"/>
+                <Image h="112.5vh" src={schedule_bg} alt="schedule background"/>
 
             </div>
         </>
