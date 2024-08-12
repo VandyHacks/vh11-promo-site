@@ -33,7 +33,7 @@ function FAQ() {
         backgroundColor: '#FCF8F5',
         borderRadius: '10px',
       }}>
-        <Text className="faq_header_text">Speakers</Text>
+        <Text className="faq_header_text">FAQ</Text>
         <Box style={{
           position: 'absolute',
           top: 0,

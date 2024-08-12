@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="road" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 199">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #333232;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-2 {
+        opacity: .8;
+        stroke: #f93d3d;
+        stroke-dasharray: 0 0 45 60;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <line class="cls-2" x1="4" y1="100" x2="1924" y2="100"/>
+  <line class="cls-1" x1="-2" y1="4" x2="1924" y2="4"/>
+  <line class="cls-1" x1="-5" y1="194" x2="1924.7" y2="194"/>
+</svg>

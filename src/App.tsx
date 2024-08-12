@@ -9,7 +9,9 @@ import Schedule from "./schedule/Schedule";
 import FAQ from "./faq/FAQ";
 import Speakers from "./speakers/Speakers";
 import Sponsors from "./sponsors/Sponsors";
+import Footer from "./Footer";
 import { MantineProvider } from "@mantine/core";
+import '@mantine/core/styles.css';
 
 function App() {
     return (
@@ -22,6 +24,7 @@ function App() {
                 <Speakers />
                 <FAQ />
                 <Sponsors />
+                <Footer />
             </MantineProvider>
         </>
     );

@@ -2,7 +2,7 @@ import React from "react";
 import {Image, Flex, Text} from "@mantine/core";
 import { Button } from '@mantine/core';
 import {useViewportSize} from "@mantine/hooks";
-import VHLogo from "./assets/VHlogo_XI.svg";
+import VHLogo from "./assets/hero/VHlogo_XI.svg";
 
 function Temp_Hero() {
     const {height, width} = useViewportSize();

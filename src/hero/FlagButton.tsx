@@ -2,7 +2,7 @@ import React from "react";
 import { Image, Text, Flex } from "@mantine/core";
 import { useViewportSize } from "@mantine/hooks";
 
-import FlagIcon from "../assets/flag-05.svg";
+import FlagIcon from "../assets/hero/flag-05.svg";
 
 interface FlagButtonProps {
     name: string;
