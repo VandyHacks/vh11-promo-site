@@ -25,7 +25,7 @@ function About() {
                     About
                 </div>
 
-                <div className="body_text" style={{color: 'white', fontSize: '24px', margin: "25px"}}>
+                <div className="body_text" style={{color: 'white', fontSize: '20px', margin: "25px"}}>
                     VandyHacks is Vanderbilt's official collegiate hackathon, and one of
                     the largest hackathons in the South! With thousands of projects submitted over
                     the course of 11 fantastic years, VandyHacks is a opportunity for students to network,

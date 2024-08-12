@@ -1,14 +1,16 @@
 import React from "react";
-import { Button } from "@mantine/core";
+import {Button} from "@mantine/core";
 
 function JoinButton() {
-  return (
-    <>
-        <Button className="register">
-            Apply Now
-        </Button>
-    </>
-  );
+    return (
+        <>
+            <a href="https://apply.vandyhacks.org" target="_blank" >
+                <Button className="register">
+                    Apply Now
+                </Button>
+            </a>
+        </>
+    );
 }
 
 export default JoinButton;

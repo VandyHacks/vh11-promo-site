@@ -6,6 +6,7 @@ import "./hero/DuckAnimations.css";
 import "./schedule/Schedule.css";
 import Hero from "./hero/Hero";
 import Temp_Hero from "./Temp_Hero";
+import MlhBanner from "./MlhBanner";
 import About from "./about/About";
 import Schedule from "./schedule/Schedule";
 import FAQ from "./faq/FAQ";
@@ -17,8 +18,9 @@ function App() {
     return (
         <>
             <MantineProvider>
-                {/*<Hero />*/}
-                {/*<About />*/}
+                <MlhBanner />
+                <Hero />
+                <About />
                 <Schedule />
                 <Speakers />
                 <FAQ />
