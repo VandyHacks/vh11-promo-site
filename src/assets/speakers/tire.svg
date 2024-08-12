@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="road" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 595 596">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2 {
+        stroke: #474747;
+        stroke-width: 17px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #565656;
+      }
+
+      .cls-3 {
+        stroke: #969696;
+        stroke-width: 24px;
+      }
+
+      .cls-5 {
+        stroke-width: 0px;
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-5" d="m297.33,595.78c-79.4,0-154.04-30.92-210.19-87.06C31,452.57.08,377.92.08,298.53S31,144.48,87.15,88.34C143.29,32.2,217.94,1.28,297.33,1.28s154.04,30.92,210.19,87.06c56.14,56.14,87.06,130.79,87.06,210.19s-30.92,154.04-87.06,210.19c-56.14,56.14-130.79,87.06-210.19,87.06Zm0-487.5c-104.9,0-190.25,85.35-190.25,190.25s85.35,190.25,190.25,190.25,190.25-85.35,190.25-190.25-85.35-190.25-190.25-190.25Z"/>
+    </clipPath>
+  </defs>
+  <g>
+    <path class="cls-4" d="m297.33,595.78c-79.4,0-154.04-30.92-210.19-87.06C31,452.57.08,377.92.08,298.53S31,144.48,87.15,88.34C143.29,32.2,217.94,1.28,297.33,1.28s154.04,30.92,210.19,87.06c56.14,56.14,87.06,130.79,87.06,210.19s-30.92,154.04-87.06,210.19c-56.14,56.14-130.79,87.06-210.19,87.06Zm0-487.5c-104.9,0-190.25,85.35-190.25,190.25s85.35,190.25,190.25,190.25,190.25-85.35,190.25-190.25-85.35-190.25-190.25-190.25Z"/>
+    <g class="cls-1">
+      <g>
+        <g id="_Radial_Repeat_" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m247.63,602.23c2.36.12,18.51.71,36.06-10.71,18.2-11.85,23.02-26.92,23.62-28.92"/>
+        </g>
+        <g id="_Radial_Repeat_-2" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m176.55,581.52c2.27.68,17.81,5.12,37.58-1.77,20.51-7.15,28.79-20.63,29.85-22.43"/>
+        </g>
+        <g id="_Radial_Repeat_-3" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m112.5,544.4c2.04,1.21,16.07,9.23,36.91,7.27,21.62-2.03,32.89-13.14,34.35-14.63"/>
+        </g>
+        <g id="_Radial_Repeat_-4" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m59.19,493.03c1.69,1.66,13.39,12.81,34.1,15.89,21.48,3.2,35.08-4.89,36.86-5.99"/>
+        </g>
+        <g id="_Radial_Repeat_-5" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m19.72,430.39c1.24,2.01,9.94,15.64,29.3,23.59,20.09,8.25,35.23,3.65,37.22,3.01"/>
+        </g>
+        <g id="_Radial_Repeat_-6" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m-3.61,360.13c.72,2.25,5.91,17.56,22.8,29.92,17.53,12.82,33.34,11.98,35.42,11.83"/>
+        </g>
+        <g id="_Radial_Repeat_-7" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m-9.45,286.33c.16,2.36,1.53,18.46,14.98,34.5,13.95,16.64,29.5,19.6,31.56,19.96"/>
+        </g>
+        <g id="_Radial_Repeat_-8" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m2.55,213.27c-.41,2.33-2.93,18.29,6.29,37.09,9.57,19.5,23.95,26.1,25.86,26.93"/>
+        </g>
+        <g id="_Radial_Repeat_-9" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m31.68,145.21c-.95,2.17-7.22,17.06-2.77,37.51,4.62,21.22,17.01,31.07,18.67,32.34"/>
+        </g>
+        <g id="_Radial_Repeat_-10" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m76.25,86.09c-1.44,1.88-11.1,14.84-11.67,35.76-.59,21.71,9.08,34.24,10.39,35.87"/>
+        </g>
+        <g id="_Radial_Repeat_-11" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m133.67,39.36c-1.85,1.48-14.33,11.75-19.89,31.93-5.77,20.94.62,35.42,1.5,37.31"/>
+        </g>
+        <g id="_Radial_Repeat_-12" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m200.61,7.73c-2.15.99-16.72,7.98-26.95,26.24-10.61,18.95-7.87,34.54-7.47,36.58"/>
+        </g>
+        <g id="_Radial_Repeat_-13" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m273.17-6.96c-2.32.45-18.15,3.75-32.45,19.03-14.84,15.86-15.91,31.65-16.01,33.73"/>
+        </g>
+        <g id="_Radial_Repeat_-14" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m347.14-3.86c-2.36-.12-18.51-.71-36.06,10.71-18.2,11.85-23.02,26.92-23.62,28.92"/>
+        </g>
+        <g id="_Radial_Repeat_-15" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m418.21,16.86c-2.27-.68-17.81-5.12-37.58,1.77-20.51,7.15-28.79,20.63-29.85,22.43"/>
+        </g>
+        <g id="_Radial_Repeat_-16" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m482.27,53.98c-2.04-1.21-16.07-9.23-36.91-7.27-21.62,2.03-32.89,13.14-34.35,14.63"/>
+        </g>
+        <g id="_Radial_Repeat_-17" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m535.58,105.35c-1.69-1.66-13.39-12.81-34.1-15.89-21.48-3.2-35.08,4.89-36.86,5.99"/>
+        </g>
+        <g id="_Radial_Repeat_-18" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m575.05,167.99c-1.24-2.01-9.94-15.64-29.3-23.59-20.09-8.25-35.23-3.65-37.22-3.01"/>
+        </g>
+        <g id="_Radial_Repeat_-19" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m598.38,238.25c-.72-2.25-5.91-17.56-22.8-29.92-17.53-12.82-33.34-11.98-35.42-11.83"/>
+        </g>
+        <g id="_Radial_Repeat_-20" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m604.21,312.05c-.16-2.36-1.53-18.46-14.98-34.5-13.95-16.64-29.5-19.6-31.56-19.96"/>
+        </g>
+        <g id="_Radial_Repeat_-21" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m592.22,385.11c.41-2.33,2.93-18.29-6.29-37.09-9.57-19.5-23.95-26.1-25.86-26.93"/>
+        </g>
+        <g id="_Radial_Repeat_-22" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m563.09,453.17c.95-2.17,7.22-17.06,2.77-37.51-4.62-21.22-17.01-31.07-18.67-32.34"/>
+        </g>
+        <g id="_Radial_Repeat_-23" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m518.52,512.28c1.44-1.88,11.1-14.84,11.67-35.76.59-21.71-9.08-34.24-10.39-35.87"/>
+        </g>
+        <g id="_Radial_Repeat_-24" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m461.1,559.01c1.85-1.48,14.33-11.75,19.89-31.93,5.77-20.94-.62-35.42-1.5-37.31"/>
+        </g>
+        <g id="_Radial_Repeat_-25" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m394.16,590.64c2.15-.99,16.72-7.98,26.95-26.24,10.61-18.95,7.87-34.54,7.47-36.58"/>
+        </g>
+        <g id="_Radial_Repeat_-26" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <path class="cls-2" d="m321.6,605.33c2.32-.45,18.15-3.75,32.45-19.03,14.84-15.86,15.91-31.65,16.01-33.73"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <circle class="cls-3" cx="297" cy="299.5" r="184"/>
+</svg>
