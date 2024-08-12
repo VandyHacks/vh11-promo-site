@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Box } from "@mantine/core";
-import "./Speakers.css";
+//import "./Speakers.css";
 import TempSpeakerImage from "../assets/tempspeaker.jpeg";
 import Pole from "../assets/speakerpole.svg";
 import Tire from "../assets/tire.svg";
