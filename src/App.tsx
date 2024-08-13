@@ -22,12 +22,12 @@ function App() {
             <MantineProvider>
                 <MlhBanner />
                 <Hero />
-                <About />
-                <Schedule />
-                <Speakers />
-                <FAQ />
-                <Sponsors />
-                <Footer />
+                {/*<About />*/}
+                {/*<Schedule />*/}
+                {/*<Speakers />*/}
+                {/*<FAQ />*/}
+                {/*<Sponsors />*/}
+                {/*<Footer />*/}
             </MantineProvider>
         </>
     );

@@ -16,7 +16,7 @@ function Hero() {
                 <Banner/>
                 <Image
                     pos="absolute"
-                    top="80vh"
+                    top="77vh"
 
                     h="23.5vh"
 

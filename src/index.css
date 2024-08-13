@@ -97,7 +97,7 @@ code {
 .social_icons {
     font-size: 50px;
     color: #555555;
-    transition: color .3s, color 0.3s;
+    transition: color 0.3s;
 }
 
 .social_icons:hover {

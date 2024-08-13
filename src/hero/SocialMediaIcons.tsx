@@ -41,7 +41,8 @@ function SocialMediaIcons() {
             gap="lg"
             m="2vh"
             direction="row"
-            wrap="wrap"
+            justify={"center"}
+            align="center"
         >
             {icons.map((ico) => (
                 <a
