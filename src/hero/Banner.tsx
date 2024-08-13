@@ -1,5 +1,5 @@
 import React from "react";
-import {Image, Flex, Text, Box, Button} from "@mantine/core";
+import {Image, Flex} from "@mantine/core";
 
 import VHLogo from "../assets/hero/VHlogo_XI.svg";
 import JoinButton from "./JoinButton";

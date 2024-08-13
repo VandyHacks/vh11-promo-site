@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, Flex} from "@mantine/core";
+import {Flex} from "@mantine/core";
 import {FaInstagram, FaAnchor, FaDiscord, FaGithub, FaTwitter, FaYoutube} from "react-icons/fa";
 
 const icons = [
@@ -48,6 +48,7 @@ function SocialMediaIcons() {
                 <a
                     href={ico.link}
                     target="_blank"
+                    rel="noreferrer"
                     style={{textDecoration: "none"}}
                 >
                     <div className="social_icons" key={ico.name}>
