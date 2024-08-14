@@ -62,8 +62,6 @@
 .faq_header_text {
     font-family: "Formula1", sans-serif;
     font-size: 54px;
-    margin-bottom: 40px;
-    text-align: center;
     color: #1F1F1F;
 }
 
@@ -90,4 +88,73 @@
     width: calc(25% - 15px);
     display: flex;
     flex-direction: column;
+}
+
+.faq-heading {
+    border-radius: 16px;
+    background-color: #fbf2ef;
+}
+
+.faq-category {
+    font-size: 20px;
+    font-family: "Helvetica", monospace;
+    font-weight: 700;
+}
+
+.faq-registration {
+    background-color: #f5dbd9;
+    border-radius: 16px;
+}
+
+.faq-registration-icon {
+    background-color: #f8b8c4;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.faq-projects {
+    background-color: #dee7e8;
+    border-radius: 16px;
+}
+
+.faq-projects-icon {
+    background-color: #b8daee;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.faq-info {
+    background-color: #deebdc;
+    border-radius: 16px;
+}
+
+.faq-info-icon {
+    background-color: #b8e5cc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.faq-other {
+    background-color: #f7f0d6;
+    border-radius: 16px;
+}
+
+.faq-other-icon {
+    background-color: #fef4bb;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.faq-question {
+    background: transparent;
+    border: none;
+}
+
+.faq-question[data-active] {
+    background: transparent;
+}
+
+.faq-control {
+    background-color: #fbf2ef;
+    border-radius: 10px;
 }
