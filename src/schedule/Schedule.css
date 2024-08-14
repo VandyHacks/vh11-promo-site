@@ -1,18 +1,18 @@
 :root {
     --events-bg-color: #ccecda;
-    --events-primary-color: #007e36;
-    --events-text-color: #005122;
+    --events-primary-color: #059340;
+    --events-text-color: #0e7a3c;
     --important-bg-color: #faccd5;
-    --important-primary-color: #b60022;
-    --important-text-color: #750016;
+    --important-primary-color: #d22645;
+    --important-text-color: #b71834;
     --workshops-bg-color: #cce4f3;
-    --workshops-primary-color: #00629b;
-    --workshops-text-color: #003e63;
+    --workshops-primary-color: #0973b2;
+    --workshops-text-color: #0f78b7;
     --workshops-difficulty-text-color: #0668a1;
     --workshops-difficulty-bg-color: #99cae7;
     --food-bg-color: #fef7ce;
-    --food-primary-color: #f8d60c;
-    --food-text-color: #635605;
+    --food-primary-color: #e8b71a;
+    --food-text-color: #b7730f;
 }
 
 .round {
@@ -27,10 +27,14 @@
     border: solid 2px var(--events-primary-color);
     background-color: var(--events-bg-color);
     color: var(--events-text-color);
+    font-family: Helvetica;
+    font-size: 30px;
 }
 
 .events-time {
     color: white;
+    font-family: Helvetica;
+    font-size: larger;
     background-color: var(--events-primary-color);
     height: 100%;
     width: 10rem;
@@ -57,6 +61,8 @@
     border: solid 2px var(--important-primary-color);
     background-color: var(--important-bg-color);
     color: var(--important-text-color);
+    font-family: Helvetica;
+    font-size: larger;
 }
 
 .important-time {
@@ -125,7 +131,7 @@
 }
 
 .food-time {
-    color: var(--food-text-color);
+    color: white;
     background-color: var(--food-primary-color);
     height: 100%;
     width: 10rem;
@@ -144,6 +150,6 @@
 }
 
 .food-indicator {
-    color: var(--food-text-color);
+    color: white;
     background-color: var(--food-primary-color);
 }

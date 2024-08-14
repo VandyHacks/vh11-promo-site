@@ -4,6 +4,7 @@ import {Image, Flex} from "@mantine/core";
 import VHLogo from "../assets/hero/VHlogo_XI.svg";
 import JoinButton from "./JoinButton";
 import SocialMediaIcons from "./SocialMediaIcons";
+import Road from "../assets/main_road.svg";
 
 function Banner() {
     return (

@@ -11,16 +11,6 @@ function Hero() {
         <>
             <div style={{height: height, width: width, margin: 0}}>
                 <Banner/>
-                <Image
-                    pos="absolute"
-                    top="77vh"
-
-                    h="23.5vh"
-
-                    src={Road}
-                    alt="Road 4 duck 2 race"
-                    style={{overflow: "hidden"}}
-                />
                 {/*<DucksRacing/>*/}
             </div>
         </>

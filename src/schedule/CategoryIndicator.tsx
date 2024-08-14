@@ -10,12 +10,12 @@ function CategoryIndicator(props: CategoryIndicatorProps) {
         <>
             <Flex
                 className={`round ${props.category}-indicator`}
-                align="center"
+                align="start"
                 justify="center"
-                px="md"
-                py="xs"
+                px="lg"
+                py="sm"
             >
-                <Text>{props.name}</Text>
+                <Text fw="bold" fz="17px">{props.name}</Text>
             </Flex>
         </>
     );
