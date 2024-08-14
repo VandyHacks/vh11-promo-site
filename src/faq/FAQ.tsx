@@ -1,66 +1,121 @@
 import React from "react";
-import { Box, Flex, Image, Text } from "@mantine/core";
+import { Box, Flex, Image, Text, Accordion, Grid } from "@mantine/core";
 import "./FAQ.css";
+import { IconClipboardData } from "@tabler/icons-react";
 
-
-const speakersData = [
+const questionsData = [
     {
-      name: "John Doe",
-      subheading: "CEO, Tech Innovations",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        category: "Registration",
+        question: "What is a dog?",
+        answer: "woof",
     },
     {
-      name: "Jane Smith",
-      subheading: "AI Researcher, Future Labs",
-      content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        category: "Hackathon Info",
+        question: "What is a cat?",
+        answer: "meow",
     },
     {
-      name: "Alex Johnson",
-      subheading: "Founder, StartUp Co.",
-      content: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        category: "Projects",
+        question: "What is a bird?",
+        answer: "caw",
     },
     {
-      name: "Sarah Brown",
-      subheading: "CTO, InnovateTech",
-      content: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Other",
+        question: "What is a turtle?",
+        answer: "idk",
+    },
+    {
+        category: "Registration",
+        question: "What is a horse?",
+        answer: "neigh",
     },
 ];
 
+function selectQuestions(category: string) {
+    return questionsData.map(
+        (question) =>
+            category == question.category && (
+                <Accordion.Item
+                    key={question.question}
+                    value={question.question}
+                    className="faq-question"
+                >
+                    <Accordion.Control className="faq-control">{question.question}</Accordion.Control>
+                    <Accordion.Panel>{question.answer}</Accordion.Panel>
+                </Accordion.Item>
+            )
+    );
+}
+
+const registrationQuestions = selectQuestions("Registration");
+const infoQuestions = selectQuestions("Hackathon Info");
+const projectQuestions = selectQuestions("Projects");
+const otherQuestions = selectQuestions("Other");
+
 function FAQ() {
-  return (
-    <Box className="speakers-container" style={{ backgroundColor: '#1F1F1F', padding: '40px 0' }}>
-      <Box className="billboard" style={{
-        backgroundColor: '#FCF8F5',
-        borderRadius: '10px',
-      }}>
-        <Text className="faq_header_text">Speakers</Text>
-        <Box style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          height: '10px',
-          background: 'repeating-linear-gradient(45deg, #1F1F1F, #1F1F1F 10px, #FCF8F5 10px, #FCF8F5 20px)'
-        }} />
-        <Flex className="faq-panes" style={{ gap: '20px', padding: '20px' }}>
-          {speakersData.map((faq, index) => (
-            <Box key={index} className="faq-pane" style={{
-              backgroundColor: '#2A2A2A',
-              padding: '15px',
-              position: 'relative',
-              overflow: 'hidden',
-              borderRadius: '20px'
-            }}>
-              <Box className="faq-image-placeholder"/>
-              <Text className="body_textspeaker">{faq.name}</Text>
-              <Text className="sub_textspeaker">{faq.subheading}</Text>
-              <Text className="sub_textspeakercontent">{faq.content}</Text>
-            </Box>
-          ))}
+    return (
+        <Flex p="lg" direction="column" gap="lg">
+            <Flex p="lg" direction="column" className="faq-heading">
+                <Text className="faq_header_text">FAQ</Text>
+                <Text>Find the answers to your questions here!</Text>
+            </Flex>
+
+            <Grid>
+                <Grid.Col span={6}>
+                    <Flex
+                        p="sm"
+                        direction="column"
+                        className="faq-registration"
+                        gap="lg"
+                    >
+                        <Flex align="center" gap="lg" p="md">
+                            <IconClipboardData size="50px" className="faq-registration-icon" />
+                            <Text className="faq-category">Registration</Text>
+                        </Flex>
+                        <Accordion variant="separated">
+                            {registrationQuestions}
+                        </Accordion>
+                    </Flex>
+                </Grid.Col>
+                <Grid.Col span={6}>
+                    <Flex p="sm" direction="column" className="faq-info" gap="lg">
+                        <Flex align="center" gap="lg" p="md">
+                            <IconClipboardData size="50px" className="faq-info-icon" />
+
+                            <Text className="faq-category">Hackathon Info</Text>
+                        </Flex>
+                        <Accordion variant="separated">
+                            {infoQuestions}
+                        </Accordion>
+                    </Flex>
+                </Grid.Col>
+                <Grid.Col span={6}>
+                    <Flex p="sm" direction="column" className="faq-projects" gap="lg">
+                        <Flex align="center" gap="lg" p="md">
+                            <IconClipboardData size="50px" className="faq-projects-icon" />
+
+                            <Text className="faq-category">Projects</Text>
+                        </Flex>
+                        <Accordion variant="separated">
+                            {projectQuestions}
+                        </Accordion>
+                    </Flex>
+                </Grid.Col>
+                <Grid.Col span={6}>
+                    <Flex p="sm" direction="column" className="faq-other" gap="lg">
+                        <Flex align="center" gap="lg" p="md">
+                            <IconClipboardData size="50px" className="faq-other-icon" />
+
+                            <Text className="faq-category">Other</Text>
+                        </Flex>
+                        <Accordion variant="separated">
+                            {otherQuestions}
+                        </Accordion>
+                    </Flex>
+                </Grid.Col>
+            </Grid>
         </Flex>
-      </Box>
-    </Box>
-  );
+    );
 }
 
 export default FAQ;
