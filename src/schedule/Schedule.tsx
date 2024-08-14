@@ -39,6 +39,7 @@ function Schedule() {
             <div
                 style={{
                     backgroundColor: "#B8FFF5",
+                    paddingTop: "6vh",
                     display: "flex",
                     justifyContent: "center",
                     zIndex: "-2",

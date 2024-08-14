@@ -58,9 +58,9 @@ function About() {
 
             </Flex>
             <Image w="100%" bg="#C7FFF6" src={about_bottom} alt="bottom of about page"/>
-            <Box bg="#C7FFF6" h="8vh"></Box>
-            <Box bg="#BBF9ED" h="5vh"></Box>
-            <Box bg="#ABF4E8" h="5vh"></Box>
+            <Box bg="#C7FFF6" h="6vh"></Box>
+            <Box bg="#BBF9ED" h="6vh"></Box>
+            <Box bg="#ABF4E8" h="6vh"></Box>
         </>
     );
 }
