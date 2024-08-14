@@ -45,21 +45,28 @@ function Event(props: EventProps) {
                         <Flex
                             className={`${props.category}-icon`}
                             mx="xs"
-                            my="xs"
+                            my="7px"
                         >
                             {matchIcon(props.icon)}
                         </Flex>
                     )}
-                    <Text>{props.eventName}</Text>
+                    <Text
+                        ff="Helvetica"
+                        fz="18px"
+                        fw="bold"
+                        ml="-10px"
+                    >
+                        {props.eventName}
+                    </Text>
                     {props.difficulty && <Flex py="3px" px="xs" className="round workshops-difficulty">{props.difficulty}</Flex>}
                 </Flex>
-                <Flex gap="lg" align="center">
+                <Flex gap="lg" align="center" >
                     {props.location && (
                         <Flex align="center" gap="xs">
                             <IconMapPinFilled
                                 className={`${props.category}-location`}
                             />
-                            <Text>{props.location}</Text>
+                            <Text ff="Helvetica">{props.location}</Text>
                         </Flex>
                     )}
 
@@ -68,7 +75,13 @@ function Event(props: EventProps) {
                         align="center"
                         justify="center"
                     >
-                        <Text>{props.timeRange}</Text>
+                        <Text
+                            ff="Helvetica"
+                            fz="17px"
+                            fw="bold"
+                        >
+                            {props.timeRange}
+                        </Text>
                     </Flex>
                 </Flex>
             </Flex>

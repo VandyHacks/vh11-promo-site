@@ -1,5 +1,5 @@
 import React from "react";
-import {Image, Text, Flex} from "@mantine/core";
+import {Image, Text, Flex, Box} from "@mantine/core";
 import {useViewportSize} from "@mantine/hooks";
 import about_top from "../assets/about/about_top.svg";
 import about_road from "../assets/about/about_road.svg";
@@ -12,7 +12,13 @@ function About() {
 
     return (
         <>
-            <Image w="100%" src={about_top} style={{color: 'white', marginTop: "200px", marginBottom: "-30px"}} alt="top of about page"/>
+            <Image
+                bg="#C7FFF6"
+                src={about_top}
+                ml="auto"
+                w="100%"
+                style={{color: 'white', marginTop: "150px", marginBottom: "-45px"}}
+                alt="top of about page"/>
             <Flex
                 w="100%"
                 direction={"column"}
@@ -30,17 +36,17 @@ function About() {
                     fz="20px"
                     m="10px 100px 20px 100px"
                 >
-                    VandyHacks is Vanderbilt's official collegiate hackathon, and one of
-                    the largest hackathons in the South! With thousands of projects submitted over
-                    the course of 11 fantastic years, VandyHacks is a opportunity for students to network,
-                    learn, collaborate,
-                    we invite you to a 24-hour hackathon this September 28th-29th..
-
-                    Set against a vibrant neon theme, this fully in-person event beckons hackers
-                    to craft groundbreaking projects, attend illuminating workshops, explore career
-                    opportunities, and vie for coveted prizes.
-
-                    Join us, and let's light up the future together!
+                    Code, collaborate, learn, explore, and network at Vanderbilt's official collegiate hackathon,
+                    VandyHacks!
+                    <br></br>
+                    As our 11th annual hackathon, this in-person event includes both student and company-led
+                    workshops, a career fair, games, events, full two-day catering, internship panels, speaker events,
+                    and the premier 24-hour hackathon with thousand of dollars in prizes.
+                    As the largest hackathons in the south, VandyHacks has had thousands of
+                    projects submitted by students over the course of 11 incredible years, and we hope you can join
+                    us in this experience this September, 28th-29th.
+                    <br></br>
+                    We hope to see you on the racetrack at VandyHacks XI!
                 </Text>
 
                 <div className="m_about_curve">
@@ -51,7 +57,10 @@ function About() {
                 <Image w="100%" mt="-25px" src={about_road} alt="road for ducky"/>
 
             </Flex>
-            <Image w="100%" mt="-15px" src={about_bottom} alt="bottom of about page"/>
+            <Image w="100%" bg="#C7FFF6" src={about_bottom} alt="bottom of about page"/>
+            <Box bg="#C7FFF6" h="8vh"></Box>
+            <Box bg="#BBF9ED" h="5vh"></Box>
+            <Box bg="#ABF4E8" h="5vh"></Box>
         </>
     );
 }

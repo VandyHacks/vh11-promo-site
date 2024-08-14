@@ -1,5 +1,5 @@
 import React from "react";
-import {Image, Box, Flex, Text, Button, Divider, Title} from "@mantine/core";
+import {Image, Box, Flex, ScrollArea, Divider} from "@mantine/core";
 import {useViewportSize} from "@mantine/hooks";
 import schedule_bg from "../assets/schedule/schedule_background.svg"
 import day_1 from "../assets/Day1.svg";
@@ -36,12 +36,19 @@ function Schedule() {
 
     return (
         <>
-            <div>
+            <div
+                style={{
+                    backgroundColor: "#B8FFF5",
+                    display: "flex",
+                    justifyContent: "center",
+                    zIndex: "-2",
+                }}
+            >
                 <Image
                     pos="absolute"
                     ml="auto"
-                    h="112.5vh"
-                    style={{overflow: "hidden", zIndex: "-1"}}
+                    h="125vh"
+                    style={{overflow: "hidden"}}
                     src={schedule_bg}
                     alt="schedule background"
                 />
@@ -50,31 +57,39 @@ function Schedule() {
                     justify={"center"}
                     align="center"
                     ta="center"
-                    maw="80%"
-                    style={{
-                        backgroundColor: "rgba(255,255,255,.6)",
-                        borderRadius: "10px",
-                    }}
+                    maw="130vh"
+                    mb="25vh"
+                    style={{zIndex: "100"}}
                 >
-                    <Flex justify="flex-end" gap="md" px="md">
+                    <Flex justify="flex-end" gap="md" px="md" m="10vh 0vh -.85vh 100vh">
                         <Image
+                            h="12vh"
                             src={day1Image}
                             onClick={() => switchDay("day1")}
                         />
                         <Image
+                            h="12vh"
                             src={day2Image}
                             onClick={() => switchDay("day2")}
                         />
                     </Flex>
-                    <Flex direction="column" w="100%" className="main-container">
+                    <Flex
+                        direction="column"
+                        w="100%"
+                        className="main-container"
+                        style={{
+                            backgroundColor: "rgba(255,255,255,.8)",
+                            borderRadius: "35px",
+                        }}
+                    >
                         <Flex
                             w="100%"
                             justify="space-between"
                             align="center"
-                            p="md"
+                            p="4px 25px 5px 25px"
                         >
-                            <Box c="#00629b" fz="40px" className="header_text">Schedule</Box>
-                            <Flex gap="md">
+                            <Box c="#00629b" fz="50px" className="header_text">Schedule</Box>
+                            <Flex gap="sm">
                                 <CategoryIndicator
                                     category="events"
                                     name="Events"
@@ -91,9 +106,13 @@ function Schedule() {
                             </Flex>
                         </Flex>
                         <Divider/>
-                        <Flex direction="column" p="lg" gap="sm">
-                            {day == "day1" ? <Day1/> : <Day2/>}
-                        </Flex>
+                        <br></br>
+                        <ScrollArea h={500}>
+                            <Flex direction="column" p="lg" gap="xs">
+                                {day == "day1" ? <Day1/> : <Day2/>}
+                            </Flex>
+                        </ScrollArea>
+                        <br></br>
                     </Flex>
                 </Flex>
             </div>

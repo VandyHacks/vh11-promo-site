@@ -12,42 +12,52 @@ const sponsors = [
     {
         name: asurion,
         link: "x.vandyhacks.org",
+        span: 1,
     },
     {
         name: grainger,
         link: "x.vandyhacks.org",
+        span: 4,
     },
     {
         name: capitalone,
         link: "x.vandyhacks.org",
+        span: 4,
     },
     {
         name: mongodb,
         link: "x.vandyhacks.org",
+        span: 6,
     },
     {
         name: phosphorus,
         link: "x.vandyhacks.org",
+        span: 6,
     },
     {
         name: asurion,
         link: "x.vandyhacks.org",
+        span: 4,
     },
     {
         name: grainger,
         link: "x.vandyhacks.org",
+        span: 4,
     },
     {
         name: capitalone,
         link: "x.vandyhacks.org",
+        span: 4,
     },
     {
         name: mongodb,
         link: "x.vandyhacks.org",
+        span: 6,
     },
     {
         name: phosphorus,
         link: "x.vandyhacks.org",
+        span: 6,
     }
 ]
 
@@ -59,7 +69,7 @@ function LogoMap() {
             {sponsors.map((sponsor) => (
 
                 <div className="sponsor_logo">
-                    <Grid.Col span="auto">
+                    <Grid.Col span={sponsor.span}>
                         <Image
                             w="50vh"
                             src={sponsor.name}
