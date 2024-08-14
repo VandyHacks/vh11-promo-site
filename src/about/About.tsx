@@ -48,13 +48,12 @@ function About() {
                     <br></br>
                     We hope to see you on the racetrack at VandyHacks XI!
                 </Text>
-
+                <Image w="100%" mt="-25px" src={about_road} alt="road for ducky"/>
                 <div className="m_about_curve">
-                    <div className="m_about">
+                    <div>
                         <Image pos="absolute" w="15%" src={ducky_red} alt="Janice"/>
                     </div>
                 </div>
-                <Image w="100%" mt="-25px" src={about_road} alt="road for ducky"/>
 
             </Flex>
             <Image w="100%" bg="#C7FFF6" src={about_bottom} alt="bottom of about page"/>

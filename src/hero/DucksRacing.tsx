@@ -1,9 +1,9 @@
 import React from "react";
 import {Image, Flex, Text} from "@mantine/core";
 import {useViewportSize} from "@mantine/hooks";
-import ducky_red from "../assets/ducky_red.svg";
-import ducky_blue from "../assets/ducky_blue.svg";
-import ducky_green from "../assets/ducky_green.svg";
+import ducky_red from "../assets/hero/ducky_red.svg";
+import ducky_blue from "../assets/hero/ducky_blue.svg";
+import ducky_green from "../assets/hero/ducky_green.svg";
 
 function DucksRacing() {
     const {height, width} = useViewportSize();

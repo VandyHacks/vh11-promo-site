@@ -79,7 +79,7 @@ function Schedule() {
                         w="100%"
                         className="main-container"
                         style={{
-                            backgroundColor: "rgba(255,255,255,.8)",
+                            backgroundColor: "rgba(255,255,255,.7)",
                             borderRadius: "35px",
                         }}
                     >

@@ -23,7 +23,7 @@ function App() {
                 <About />
                 <Schedule />
                 {/*<Speakers />*/}
-                {/*<FAQ />*/}
+                <FAQ />
                 {/*<Sponsors />*/}
                 {/*<Footer />*/}
             </MantineProvider>

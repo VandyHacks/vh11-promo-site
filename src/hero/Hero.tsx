@@ -2,6 +2,7 @@ import React from "react";
 import {Image} from "@mantine/core";
 import {useViewportSize} from "@mantine/hooks";
 import Banner from "./Banner";
+import DucksRacing from "./DucksRacing";
 import Road from "../assets/main_road.svg";
 
 function Hero() {
