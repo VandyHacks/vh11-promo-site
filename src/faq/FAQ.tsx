@@ -132,7 +132,7 @@ function FAQ() {
                 pos="absolute"
                 right="0vh"
             />
-            <Flex p="lg" direction="column" gap="lg" bg="#D9F8FF">
+            <Flex p="lg" direction="column" gap="lg" bg="#C7FFF6">
                 <Flex p="lg" direction="column" className="faq-heading">
                     <Text className="faq_header_text">FAQ</Text>
                     <Text>Find the answers to your questions here!</Text>

@@ -56,10 +56,8 @@ function About() {
                 </div>
 
             </Flex>
-            <Image w="100%" bg="#C7FFF6" src={about_bottom} alt="bottom of about page"/>
-            <Box bg="#C7FFF6" h="6vh"></Box>
-            <Box bg="#BBF9ED" h="6vh"></Box>
-            <Box bg="#ABF4E8" h="6vh"></Box>
+            <Image w="100%" bg="#C7FFF6" pb="15vh" src={about_bottom} alt="bottom of about page"/>
+
         </>
     );
 }

@@ -24,7 +24,7 @@ function App() {
                 <Schedule />
                 {/*<Speakers />*/}
                 <FAQ />
-                {/*<Sponsors />*/}
+                <Sponsors />
                 {/*<Footer />*/}
             </MantineProvider>
         </>
