@@ -1,8 +1,9 @@
 import React from "react";
-import {Image, Flex, Text, Grid} from "@mantine/core";
+import {Image, Flex, Box} from "@mantine/core";
 import {useViewportSize} from "@mantine/hooks";
 import "./Sponsors.css";
 import sponsors_banner from "../assets/sponsors/sponsors_banner.svg";
+import sunset from "../assets/sponsors/sponsors_sunrise.svg"
 import LogosGrid from "./LogosGrid";
 import Stars from "./Stars";
 
@@ -11,22 +12,25 @@ function Sponsors() {
 
     return (
         <>
-            <Stars />
+            <Image bg="#1E2C42" pb="15vh" src={sunset} w="auto" />
+
             <Flex
                 w="100%"
+                bg="#1E2C42"
                 gap="md"
                 display="flex"
                 direction={"column"}
                 justify={"center"}
                 align="center"
             >
-                <div className="header_text" style={{color: "#007AC3", fontSize: "80px", margin: "0"}}>
+                <Stars />
+                <div className="header_text" style={{color: "white", fontSize: "80px", margin: "0"}}>
                     Sponsors
                 </div>
                 <Image
                     w="85vh"
                     src={sponsors_banner}
-                    style={{color: 'white', marginBottom: "20px"}}
+                    style={{color: 'white', marginBottom: "20px", zIndex: 100}}
                     alt="ducks on pedestal over sponsors"
                 />
                 <LogosGrid />

@@ -11,8 +11,8 @@ import FAQ from "./faq/FAQ";
 import Speakers from "./speakers/Speakers";
 import Sponsors from "./sponsors/Sponsors";
 import Footer from "./Footer";
+import TempSpeakers from "./temp_speaker";
 import { MantineProvider } from "@mantine/core";
-import '@mantine/core/styles.css';
 
 function App() {
     return (
@@ -23,9 +23,10 @@ function App() {
                 <About />
                 <Schedule />
                 {/*<Speakers />*/}
-                {/*<FAQ />*/}
-                {/*<Sponsors />*/}
-                {/*<Footer />*/}
+                <TempSpeakers />
+                <FAQ />
+                <Sponsors />
+                <Footer />
             </MantineProvider>
         </>
     );

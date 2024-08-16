@@ -1,25 +1,26 @@
-
-@keyframes marquee_green {
-    0% { transform: translateX(-60%); }
-    70% { transform: translateX(60%); }
-    100% { transform: translateX(60%); }
+@keyframes start-loop {
+    0% {
+        transform: translateX(40%);
+    }
+    100% {
+        transform: translateX(110%);
+    }
 }
 
-@keyframes marquee_red {
-    0% { transform: translateX(-65%); }
-    70% { transform: translateX(60%); }
-    100% { transform: translateX(60%); }
+@keyframes infinite-loop {
+    0% { transform: translateX(-100%); }
+    70% { transform: translateX(100%); }
+    100% { transform: translateX(100%); }
 }
 
-@keyframes marquee_blue {
-    0% { transform: translateX(-60%); }
-    95% { transform: translateX(60%); }
-    100% { transform: translateX(60%); }
-}
-
-@keyframes danica {
+@keyframes bumping {
     0% { transform: translateY(0%); }
-    50% { transform: translateY(1.5%); }
+    50% { transform: translateY(1%); }
+    100% { transform: translateY(0%); }
+}
+@keyframes bumping_red {
+    0% { transform: translateY(0%); }
+    50% { transform: translateY(2%); }
     100% { transform: translateY(0%); }
 }
 
@@ -29,7 +30,6 @@
     100% { transform: translateY(0%); }
 }
 
-
 @keyframes swerve-up-down {
     0% { transform: translateY(0px); }
     20% { transform: translateY(-30px); }
@@ -38,23 +38,55 @@
 }
 
 .m_green {
-    margin-top: -35px;
-    animation: marquee_green 4s ease-out infinite;
+    transform: translateX(40%);
 }
+.animation-green {
+    animation: start-loop 2s ease-in 1, infinite-loop 4s ease-in infinite;
+    animation-delay: 0s, 2s;
+}
+
 .m_red {
-    margin-top: -47px;
-    animation: marquee_red 4s ease-in-out infinite;
+    margin-top: -75px;
+    transform: translateX(40%);
+    margin-left: -80px;
 }
+.animation-red {
+    animation: start-loop 2s ease-out 1, infinite-loop 4s ease-out infinite;
+    animation-delay: 0s, 2s;
+}
+
+.m_yellow {
+    margin-top: -75px;
+    transform: translateX(40%);
+    margin-left: -160px;
+}
+.animation-yellow {
+    animation: start-loop 3s ease-in 1, infinite-loop 6s linear infinite;
+    animation-delay: .5s, 3.5s;
+}
+
 .m_blue {
-    margin-top: -55px;
-    animation: marquee_blue 12s linear infinite;
+    margin-top: -75px;
+    transform: translateX(40%);
+    margin-left: -240px;
 }
+.animation-blue {
+    animation: start-loop 12s linear 1, infinite-loop 12s linear infinite;
+    animation-delay: 0s, 12s;
+}
+
+
 .m_bumping {
-    animation: danica .10s ease-out infinite;
+    animation: bumping 300ms ease-out infinite;
+}
+.m_bumping_red {
+    animation: bumping 100ms ease-out infinite;
 }
 .road_curve {
     /*animation: swerve-down 12s linear infinite;*/
 }
+
+
 
 .m_about {
     animation: marquee_red 6s ease-in-out infinite;
