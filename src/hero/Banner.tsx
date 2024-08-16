@@ -1,25 +1,53 @@
-import React from "react";
-import {Image, Flex} from "@mantine/core";
-
+import React, { useEffect, useState } from 'react';
+import {Image, Flex, Box} from "@mantine/core";
 import VHLogo from "../assets/hero/VHlogo_XI.svg";
 import JoinButton from "./JoinButton";
 import SocialMediaIcons from "./SocialMediaIcons";
-import Road from "../assets/main_road.svg";
 
 function Banner() {
+
+    const [scrollPos, setScrollPos] = useState(0);
+    const [fadeClass, setFadeClass] = useState('');
+
+    const handleScroll = () => {
+        const currentScrollPos = window.scrollY;
+        const triggerHeight = 0; // Adjust this value as needed
+
+        if (currentScrollPos > triggerHeight && currentScrollPos > scrollPos) {
+            setFadeClass('bannerFadeOut');
+        } else if (currentScrollPos < scrollPos) {
+            setFadeClass('bannerFadeIn');
+        }
+
+        setScrollPos(currentScrollPos);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [scrollPos]);
+
     return (
         <>
             <Flex
-                top="3.5vh"
+                top="2vh"
                 pos="absolute"
                 w="100%"
                 direction={"column"}
                 justify={"center"}
                 align="center"
                 ta="center"
-
             >
-                <Image w="80vh" src={VHLogo} alt="VandyHacks Logo"/>
+                <Box
+                    bg="rgba(255,255,255,.8)"
+                    p="xl"
+                    pb="0vh"
+                    style={{borderRadius: "25px", zIndex: "100"}}
+                    className={`fade-element ${fadeClass}`}
+                >
+                <Image w="75vh" src={VHLogo} alt="VandyHacks Logo"/>
 
                 <div className="header_text" style={{color: '#ff4848'}}>
                     VANDYHACKS XI
@@ -37,6 +65,7 @@ function Banner() {
                     {/*    If you want more information or are interested in sponsoring us,*/}
                     {/*    please contact chloe.p.nixon@vanderbilt.edu*/}
                     {/*</Text>*/}
+                </Box>
             </Flex>
         </>
     );

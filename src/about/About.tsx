@@ -6,18 +6,27 @@ import about_road from "../assets/about/about_road.svg";
 import about_front_grass from "../assets/about/about_front_grass.svg";
 import about_bottom from "../assets/about/about_bottom.svg";
 import ducky_red from "../assets/hero/ducky_red.svg";
+import flag from "../assets/about/transition_flag.svg"
 
 function About() {
     const {height, width} = useViewportSize();
 
     return (
-        <>
+        <div style={{color: "#C7FFF6"}}>
             <Image
-                bg="#C7FFF6"
-                src={about_top}
+                src={flag}
+                w="200vh"
                 ml="auto"
+                pt="75vh"
+                bg="C7FFF6"
+                style={{color: '#C7FFF6', marginBottom: "-45px"}}
+                alt="covers up hero in organic way"
+            />
+            <Image
                 w="100%"
-                style={{color: 'white', marginTop: "150px", marginBottom: "-45px"}}
+                bg="#C7FFF6"
+                pt="50vh"
+                src={about_top}
                 alt="top of about page"/>
             <Flex
                 w="100%"
@@ -58,7 +67,7 @@ function About() {
             </Flex>
             <Image w="100%" bg="#C7FFF6" pb="15vh" src={about_bottom} alt="bottom of about page"/>
 
-        </>
+        </div>
     );
 }
 

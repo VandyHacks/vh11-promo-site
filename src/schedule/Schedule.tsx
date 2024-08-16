@@ -48,7 +48,7 @@ function Schedule() {
                 <Image
                     pos="absolute"
                     ml="auto"
-                    h="125vh"
+                    h="140vh"
                     style={{overflow: "hidden"}}
                     src={schedule_bg}
                     alt="schedule background"
@@ -58,7 +58,7 @@ function Schedule() {
                     justify={"center"}
                     align="center"
                     ta="center"
-                    maw="130vh"
+                    maw="120vh"
                     mb="25vh"
                     style={{zIndex: "100"}}
                 >

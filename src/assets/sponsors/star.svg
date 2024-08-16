@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="road" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.5 145.5">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #ffe36e;
-        stroke-width: 0px;
-      }
-    </style>
-  </defs>
-  <path class="cls-1" d="m29.73,58.9L25.08,3.3c-.25-3,3.64-4.4,5.36-1.92l31.95,46.08c.52.74,1.35,1.21,2.25,1.26l37.32,2.16c2.61.15,3.74,3.38,1.8,5.13l-27.75,25.01c-.68.62-1.04,1.51-.96,2.43l4.84,58.66c.25,3.04-3.73,4.41-5.4,1.86l-32.1-49.02c-.51-.78-1.36-1.27-2.29-1.33l-37.27-2.16c-2.61-.15-3.74-3.38-1.8-5.13l27.75-25c.68-.62,1.04-1.52.96-2.43Z"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.9.4, SVG Export Plug-In . SVG Version: 9.03 Build 54784)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FCE147;enable-background:new    ;}
+</style>
+<path class="st0" d="M514.3,271.5l280.9-115.4c30.9-12.7,61.8,18.2,49.1,49.1L729,486.2c-3.8,9.2-3.8,19.5,0,28.6l115.4,280.9
+	c12.7,30.9-18.2,61.8-49.1,49.1L514.3,729.5c-9.2-3.8-19.5-3.8-28.6,0L204.8,844.9c-30.9,12.7-61.8-18.2-49.1-49.1L271,514.8
+	c3.8-9.2,3.8-19.5,0-28.6L155.6,205.2c-12.7-30.9,18.2-61.8,49.1-49.1l280.9,115.4C494.9,275.3,505.2,275.3,514.3,271.5z"/>
 </svg>

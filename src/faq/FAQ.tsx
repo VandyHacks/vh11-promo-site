@@ -133,8 +133,8 @@ function FAQ() {
                 right="0vh"
             />
             <Flex p="lg" direction="column" gap="lg" bg="#C7FFF6">
-                <Flex p="lg" direction="column" className="faq-heading">
-                    <Text className="faq_header_text">FAQ</Text>
+                <Flex p="lg" direction="column" className="faq-heading" c="#1f506e">
+                    <Text className="faq_header_text" c="#1f506e">FAQ</Text>
                     <Text>Find the answers to your questions here!</Text>
                 </Flex>
 

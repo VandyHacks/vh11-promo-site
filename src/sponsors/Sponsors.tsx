@@ -12,8 +12,8 @@ function Sponsors() {
 
     return (
         <>
-            <Image src={sunset} />
-            <Stars />
+            <Image bg="#1E2C42" pb="15vh" src={sunset} w="auto" />
+
             <Flex
                 w="100%"
                 bg="#1E2C42"
@@ -23,21 +23,14 @@ function Sponsors() {
                 justify={"center"}
                 align="center"
             >
-                <Box
-                    pos={"absolute"}
-
-
-                    bg="#004400"
-                >
-
-                </Box>
+                <Stars />
                 <div className="header_text" style={{color: "white", fontSize: "80px", margin: "0"}}>
                     Sponsors
                 </div>
                 <Image
                     w="85vh"
                     src={sponsors_banner}
-                    style={{color: 'white', marginBottom: "20px"}}
+                    style={{color: 'white', marginBottom: "20px", zIndex: 100}}
                     alt="ducks on pedestal over sponsors"
                 />
                 <LogosGrid />
