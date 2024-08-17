@@ -1,6 +1,5 @@
 import React from "react";
 import {Image, Flex, Text} from "@mantine/core";
-import {useViewportSize} from "@mantine/hooks";
 import "./Sponsors.css";
 import sponsors_banner from "../assets/sponsors/sponsors_banner.svg";
 import sunset from "../assets/sponsors/sponsors_sunrise.svg"
