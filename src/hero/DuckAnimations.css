@@ -9,7 +9,6 @@
 
 @keyframes infinite-loop {
     0% { transform: translateX(-100%); }
-    70% { transform: translateX(100%); }
     100% { transform: translateX(100%); }
 }
 
@@ -41,7 +40,7 @@
     transform: translateX(40%);
 }
 .animation-green {
-    animation: start-loop 2s ease-in 1, infinite-loop 4s ease-in infinite;
+    animation: start-loop 2s ease-in 1, infinite-loop 4s cubic-bezier(0,.8,1,.8) infinite;
     animation-delay: 0s, 2s;
 }
 
@@ -51,7 +50,7 @@
     margin-left: -80px;
 }
 .animation-red {
-    animation: start-loop 2s ease-out 1, infinite-loop 4s ease-out infinite;
+    animation: start-loop 2s ease-out 1, infinite-loop 4.5s ease-out infinite;
     animation-delay: 0s, 2s;
 }
 
@@ -62,7 +61,7 @@
 }
 .animation-yellow {
     animation: start-loop 3s ease-in 1, infinite-loop 6s linear infinite;
-    animation-delay: .5s, 3.5s;
+    animation-delay: 1s, 4s;
 }
 
 .m_blue {
@@ -71,7 +70,7 @@
     margin-left: -240px;
 }
 .animation-blue {
-    animation: start-loop 12s linear 1, infinite-loop 12s linear infinite;
+    animation: start-loop 15s linear 1, infinite-loop 30s linear infinite;
     animation-delay: 0s, 12s;
 }
 
@@ -94,6 +93,18 @@
 
 .m_about_curve {
     animation: swerve-up-down 4s linear infinite
+}
+
+.start_flag {
+    transition: transform 300ms ease, opacity 300ms ease;
+    transform-origin: bottom left;
+}
+.start_flag:hover {
+    transform: scale(1.05);
+    opacity: .95;
+}
+.start_flag.clicked {
+    transform: rotate(90deg);
 }
 
 

@@ -1,24 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import {Button, Image} from "@mantine/core";
-import star_img from "../assets/sponsors/star.svg"
-
-const starmap = [
-    {
-        top: "5vh",
-        left: "10vh",
-        angle: "-120",
-    },
-    {
-        top: "10vh",
-        left: "40vh",
-        angle: "-30",
-    },
-    {
-        top: "30vh",
-        left: "30vh",
-        angle: "360",
-    },
-]
+import star_img from "../assets/sponsors/star.svg";
 
 const genRandomNumber = (min: number, max: number) => {
     return Math.floor(Math.random() * (max - min) + min);
@@ -27,61 +9,46 @@ const genRandomNumber = (min: number, max: number) => {
 const $el = document.body;
 
 const makeStar = (mx: number, my: number, i: number) => {
-    const star = document.createElement("div");
-    star.classList.add("star");
 
-    const yOffset = 5650;
-    // let x = genRandomNumber(0, 100);
-    // let y = genRandomNumber(610, 660);
-
-    const { style } = star;
-
-    style.left = mx + "%";
-    style.top = my + yOffset + "px";
-
-    style.setProperty(
-        "--star-angle",
-        Math.ceil(genRandomNumber(0, 180)) + "deg"
+    return (
+        <div
+            key={i}
+            className="star"
+            style={{
+                left: `${mx}%`,
+                top: `${my}px`,
+                transform: `rotate(${Math.ceil(genRandomNumber(0, 180))}deg)`,
+                animationDuration: `${Math.ceil(genRandomNumber(1000, 2000))}ms`,
+                animationDelay: `${Math.ceil(genRandomNumber(0, 1200))}ms`,
+            }}
+        >
+            {/*{i + 1}*/}
+        </div>
     );
-
-    style.setProperty(
-        "--anim-duration",
-        Math.ceil(genRandomNumber(500, 3000)) + "ms"
-    );
-
-    style.setProperty(
-        "--anim-delay",
-        Math.ceil(genRandomNumber(0, 1500)) + "ms"
-    );
-
-    // const textNode = document.createElement("span");
-    // textNode.textContent = (i+1).toString();
-    // textNode.style.color = "black"; // Set text color to black
-    // textNode.style.position = "absolute"; // Position the text relative to the star
-    // textNode.style.left = "50%"; // Center the text horizontally
-    // textNode.style.top = "50%"; // Center the text vertically
-    // textNode.style.transform = "translate(-50%, -50%)"; // Offset the text to the center
-
-    // star.appendChild(textNode);
-
-    return star;
 }
 
-const xCoords = [0, 95, 8, 0, 95, 9, 22, 1, 15, 32, 8, 24, 40, 50, 60, 68, 70, 78, 16, 89, 82, 75];
-const yCoords = [0, 2, 60, 53, 50, 10, 6, 25, 20, 16, 37, 33, 8, 11, 20, 6, 30, 17, 49, 25, 40, 57];
-
-for (let i = 0; i < 100; i++) {
-    $el.append(makeStar(xCoords[i], (yCoords[i]*8), i));
-}
-
-// for (let i = 0; i < 30; i++) {
-//     $el.append(makeStar());
-// }
+const xCoords = [0, 97, 10, 2, 97, 11, 24, 3, 17, 37, 10, 26, 42, 52, 62, 70, 71, 80, 20, 91, 84, 77];
+const yCoords = [5, 2, 60, 53, 50, 10, 6, 25, 20, 22, 37, 30, 8, 11, 20, 6, 30, 17, 46, 25, 40, 57];
 
 function Stars() {
+
+    const [starElements, setStarElements] = useState<JSX.Element[]>([]);
+
+    useEffect(() => {
+        const stars = [];
+
+        for (let i = 0; i < xCoords.length; i++) {
+            stars.push(makeStar(xCoords[i], yCoords[i] * 8, i));
+        }
+
+        setStarElements(stars);
+    }, []); // Empty dependency array ensures this runs only once
+
+
     return (
-        <>
-        </>
+        <div className="stars_container">
+            {starElements}
+        </div>
     );
 }
 

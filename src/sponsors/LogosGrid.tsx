@@ -1,82 +1,52 @@
 import React from "react";
-import {Image, Flex, Text, Grid} from "@mantine/core";
+import {Image, Anchor, Grid} from "@mantine/core";
 import {useViewportSize} from "@mantine/hooks";
 import "./Sponsors.css";
-import asurion from "../assets/sponsors_logos/asurion-vector-logo.svg";
-import phosphorus from "../assets/sponsors_logos/asurion-vector-logo.svg"
-import grainger from "../assets/sponsors_logos/asurion-vector-logo.svg";
-import mongodb from "../assets/sponsors_logos/asurion-vector-logo.svg";
-import capitalone from "../assets/sponsors_logos/asurion-vector-logo.svg";
+import phosphorus from "../assets/sponsors_logos/phosphorus.svg"
+import capitalone from "../assets/sponsors_logos/Capital_One_logo.svg";
+import VUisis from "../assets/sponsors_logos/ISIS-logo.jpg";
+import wolfram from "../assets/sponsors_logos/Wolfram_Alpha_2022.svg";
 
 const sponsors = [
     {
-        name: asurion,
-        link: "x.vandyhacks.org",
-        span: 1,
-    },
-    {
-        name: grainger,
-        link: "x.vandyhacks.org",
-        span: 4,
-    },
-    {
         name: capitalone,
-        link: "x.vandyhacks.org",
-        span: 4,
-    },
-    {
-        name: mongodb,
-        link: "x.vandyhacks.org",
-        span: 6,
+        link: "https://www.capitalonecareers.com/internship-programs",
+        span: 3,
     },
     {
         name: phosphorus,
-        link: "x.vandyhacks.org",
-        span: 6,
+        link: "https://phosphorus.io/",
+        span: 3,
     },
     {
-        name: asurion,
-        link: "x.vandyhacks.org",
-        span: 4,
+        name: wolfram,
+        link: "https://www.wolframalpha.com/",
+        span: 3,
     },
     {
-        name: grainger,
-        link: "x.vandyhacks.org",
-        span: 4,
+        name: VUisis,
+        link: "https://www.isis.vanderbilt.edu/",
+        span: 3,
     },
-    {
-        name: capitalone,
-        link: "x.vandyhacks.org",
-        span: 4,
-    },
-    {
-        name: mongodb,
-        link: "x.vandyhacks.org",
-        span: 6,
-    },
-    {
-        name: phosphorus,
-        link: "x.vandyhacks.org",
-        span: 6,
-    }
 ]
 
 function LogoMap() {
     const {height, width} = useViewportSize();
 
     return (
-        <Grid grow gutter="sm" justify="center" align="flex-end">
+        <Grid w="96%" grow gutter="xl" justify="center" align="flex-end">
             {sponsors.map((sponsor) => (
-
-                <div className="sponsor_logo">
-                    <Grid.Col span={sponsor.span}>
-                        <Image
-                            w="50vh"
-                            src={sponsor.name}
-                            alt="sponsor logo"
-                        />
-                    </Grid.Col>
-                </div>
+                <Anchor href={sponsor.link} target="_blank" underline="never">
+                    <div className="sponsor_logo">
+                        <Grid.Col span={12}>
+                            <Image
+                                w="50vh"
+                                src={sponsor.name}
+                                alt="sponsor logo"
+                            />
+                        </Grid.Col>
+                    </div>
+                </Anchor>
 
             ))}
         </Grid>

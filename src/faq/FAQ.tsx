@@ -13,42 +13,42 @@ const questionsData = [
     {
         category: "Registration",
         question: "How do I register?",
-        answer: "You can register by filling out a brief form at the “Apply Now” button at the top of the page, or by visiting apply.vandyhacks.org. You can check your application status on the registration portal.",
+        answer: "You can register by filling out our brief form on the “Apply Now” button at the top of the page, or by visiting apply.vandyhacks.org. You can check your application status on the registration portal.",
     },
     {
         category: "Registration",
         question: "What is the registration deadline?",
-        answer: "The deadline to apply is currently September 15th at 11:59 pm. Please apply as early as possible, it helps us with plan a lot better!",
+        answer: "The deadline to apply is currently September 20th at 11:59 pm. Please apply as early as possible, as it helps us with plan a lot better!",
     },
     {
         category: "Registration",
         question: "Who can apply?",
-        answer: "Anyone who is 18 or older by the day of the event opening and is currently enrolled in a college or university with a valid student ID."
+        answer: "Anyone who is 18 or older by the day of the event and is currently enrolled in a college or university with a valid student ID."
     },
     {
         category: "Hackathon Info",
         question: "What is a hackathon?",
-        answer: "A hackathon is an event where you collaborate with others to create a project from scratch. It’s less about the final product, but more about the teamwork, creativity, and problem-solving skills that are sparked in the process. There is no limit to what you can create, but there are special prizes for projects that fit specific criteria.",
+        answer: "A hackathon is an event where you collaborate with others to create a project from scratch. We value not only the final product, but the teamwork, creativity, and problem-solving skills that are sparked in the process! There is no limit to what you can create, but there are special prizes for projects that fit specific criteria.",
     },
     {
         category: "Hackathon Info",
         question: "What if I have never been to a hackathon?",
-        answer: "Dont fret! You will receive a full guide on how to hack a few days before the event, and there will also be VandyHacks staff, mentors, and other hackers to answer any questions!",
+        answer: "Dont fret! You will receive a full guide on how to hack a few days before the event, and there will also be VandyHacks staff, mentors, and other hackers to answer any questions you might have.",
     },
     {
         category: "Hackathon Info",
         question: "How are teams formed?",
-        answer: "We will provide an event after the opening ceremony specifically for team formation. You may also contact friends or form connections on Discord before the event starts. A team can have at most four people. You also don’t need a team to submit a project, feel free to work individually!",
+        answer: "You can form teams with friends or reach out on our Discord before the event starts. We will also have an event right after the opening ceremony specifically for team matching. A team can have at most four people. You also don’t need a team to submit a project, feel free to work individually!",
     },
     {
         category: "Hackathon Info",
         question: "Will there be other activities??",
-        answer: "Absolutely! Our committee have been working very hard on creating the best workshops, career fairs (with sponsors!), fun events, panels, and so much more! To be eligible to participate in most events, you need to register even if you don’t plan on submitting a project.",
+        answer: "Absolutely! Our committee have been working very hard on creating the best workshops, career fairs (with sponsors!), social events, panels, and so much more! To be eligible to participate in most events, you need to register, even if you don’t plan on submitting a project.",
     },
     {
         category: "Hackathon Info",
         question: "Can I participate virtually?",
-        answer: "No, VandyHacks XI is purely in-person.",
+        answer: "Unfortunately not, VandyHacks XI is fully in-person.",
     },
     {
         category: "Projects",
@@ -63,7 +63,7 @@ const questionsData = [
     {
         category: "Projects",
         question: "Can I submit older projects?",
-        answer: "No. We require that all formal submissions be projects that were started, made, and presented exclusively during VandyHacks XI. Any submissions that were found to contain a noticeable amount of previously made material will be disqualified from all prizes.",
+        answer: "Unfortunately not. We require that all formal submissions be projects that were started, made, and presented exclusively during VandyHacks XI. Any submissions that were found to contain a noticeable amount of previously made material will be disqualified from all prizes.",
     },
     {
         category: "Projects",
@@ -120,7 +120,7 @@ const otherQuestions = selectQuestions("Other");
 
 function FAQ() {
     return (
-        <div>
+        <div style={{position: "relative"}}>
             <Image
                 src={left_cloud}
                 w="80vh"
