@@ -52,7 +52,7 @@ code {
 .header_text {
     font-family: "Formula1";
     margin-top: 10px;
-    font-size: 50px;
+    font-size: 55px;
 }
 
 .body_text {
@@ -85,13 +85,14 @@ code {
     border: 2px solid #fc3f3f;
     background-color: transparent;
     color: #fc3f3f;
-    transition: background-color .3s, color 0.3s;
+    transition: background-color .3s, color 0.3s, transform .3s;
     cursor: pointer;
 }
 
 .register:hover {
     background-color: #fc3f3f;
     color: white;
+    transform: scale(1.025)
 }
 
 .social_icons {
@@ -115,21 +116,21 @@ code {
 @keyframes fadeOut {
     0% {
         opacity: 1;
-        zIndex: 10;
+        pointer-events: auto;
     }
     100% {
         opacity: 0;
-        zIndex: -1000;
+        pointer-events: none;
     }
 }
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        zIndex: -1000;
+        pointer-events: none;
     }
     100% {
         opacity: 1;
-        zIndex: 10;
+        pointer-events: auto;
     }
 }

@@ -32,7 +32,7 @@ function Banner() {
     return (
         <>
             <Flex
-                top="2vh"
+                top="5vh"
                 pos="absolute"
                 w="100%"
                 direction={"column"}
@@ -41,7 +41,7 @@ function Banner() {
                 ta="center"
             >
                 <Box
-                    bg="rgba(255,255,255,.8)"
+                    bg="rgba(255,255,255,.85)"
                     pos="relative"
                     p="xl"
                     pb="0vh"

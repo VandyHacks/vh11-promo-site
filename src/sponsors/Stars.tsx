@@ -18,7 +18,7 @@ const makeStar = (mx: number, my: number, i: number) => {
                 left: `${mx}%`,
                 top: `${my}px`,
                 transform: `rotate(${Math.ceil(genRandomNumber(0, 180))}deg)`,
-                animationDuration: `${Math.ceil(genRandomNumber(1000, 2000))}ms`,
+                animationDuration: `${Math.ceil(genRandomNumber(700, 2000))}ms`,
                 animationDelay: `${Math.ceil(genRandomNumber(0, 1200))}ms`,
             }}
         >

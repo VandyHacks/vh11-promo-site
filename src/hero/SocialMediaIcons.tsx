@@ -16,7 +16,7 @@ const icons = [
     {
         name: "Discord",
         icon: FaDiscord,
-        link: "https://discord.com/invite/GVsHeNR9j6",
+        link: "",
     },
     {
         name: "Github",

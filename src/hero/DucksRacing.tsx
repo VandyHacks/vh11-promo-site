@@ -30,16 +30,26 @@ function DucksRacing() {
 
     return (
         <div>
-            <Image
+            <Box
                 pos="fixed"
                 top="40vh"
-                left="60%"
-                w="20vh"
-                className="start_flag"
-
-                src={start_flag}
-                onClick={handleStartRace}
-            />
+                left="54%"
+            >
+                <Text
+                    className="body_text"
+                    pos="absolute"
+                    c="white"
+                    fz="25px"
+                >
+                <Image
+                    w="20vh"
+                    className="start_flag"
+                    src={start_flag}
+                    onClick={handleStartRace}
+                />
+                    Start Race!
+                </Text>
+            </Box>
             <Box
                 top="51.5vh"
                 pos="fixed"
