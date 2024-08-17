@@ -59,10 +59,15 @@
     color: #FCF8F5;
 }
 
+/*8==============================================D*/
+/*8==============================================D*/
+/*8==============================================D*/
+
+
 .faq_header_text {
     font-family: "Formula1", sans-serif;
     font-size: 54px;
-    color: #1F1F1F;
+    color: #343434;
 }
 
 .faq-panes {
@@ -82,7 +87,7 @@
 }
 
 .faq-pane {
-    background-color: #2A2A2A;
+    background-color: #ff0000;
     border-radius: 10px;
     padding: 20px;
     width: calc(25% - 15px);
@@ -91,56 +96,53 @@
 }
 
 .faq-heading {
-    border-radius: 16px;
-    background-color: #fbf2ef;
+    border-radius: 20px;
+    background-color: #9beceb;
 }
 
 .faq-category {
-    font-size: 20px;
+    font-size: 40px;
+    color: rgba(35, 35, 35, .8);
     font-family: "Helvetica", monospace;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .faq-registration {
-    background-color: #f5dbd9;
+    background-color: rgba(255, 216, 224, .8);
     border-radius: 16px;
 }
 
 .faq-registration-icon {
-    background-color: #f8b8c4;
     border-radius: 5px;
     padding: 5px;
 }
 
 .faq-projects {
-    background-color: #dee7e8;
+    background-color: rgba(193, 229, 255, .8);
     border-radius: 16px;
 }
 
 .faq-projects-icon {
-    background-color: #b8daee;
     border-radius: 5px;
     padding: 5px;
 }
 
 .faq-info {
-    background-color: #deebdc;
+    background-color: rgba(212, 250, 208, .8);
     border-radius: 16px;
 }
 
 .faq-info-icon {
-    background-color: #b8e5cc;
     border-radius: 5px;
     padding: 5px;
 }
 
 .faq-other {
-    background-color: #f7f0d6;
+    background-color: rgba(255, 247, 209, .8);
     border-radius: 16px;
 }
 
 .faq-other-icon {
-    background-color: #fef4bb;
     border-radius: 5px;
     padding: 5px;
 }
@@ -155,6 +157,10 @@
 }
 
 .faq-control {
-    background-color: #fbf2ef;
+    background-color: rgba(255,255,255,.9);
     border-radius: 10px;
+    font-family: Helvetica;
+    color: #153C4F;
+    font-size: 20px;
+    font-weight: 700;
 }

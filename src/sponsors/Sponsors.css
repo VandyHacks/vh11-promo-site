@@ -30,7 +30,29 @@
 }
 
 
-.star_background {
+.star {
+    --anim-duration: "";
+    --anim-delay: "";
+    --star-angle: "";
     position: absolute;
-    width: 60px;
+    width: 35px;
+    height: 35px;
+    transform: rotate(var(--star-angle));
+    background-image: url('../assets/sponsors/star.svg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    animation: twinkle ease-in infinite alternate;
+    animation-duration: var(--anim-duration);
+    animation-delay: var(--anim-delay);
+}
+
+@keyframes twinkle {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: .2;
+    }
 }
