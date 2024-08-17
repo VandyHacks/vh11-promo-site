@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Flex, Text, Button, Divider, Title } from "@mantine/core";
+import { Flex, Text } from "@mantine/core";
 import {
     IconMapPinFilled,
     IconStar,
@@ -30,7 +30,6 @@ function Event(props: EventProps) {
                 return <IconShare />;
             default:
                 return;
-                break;
         }
     }
     return (

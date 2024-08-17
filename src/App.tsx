@@ -8,7 +8,7 @@ import MlhBanner from "./MlhBanner";
 import About from "./about/About";
 import Schedule from "./schedule/Schedule";
 import FAQ from "./faq/FAQ";
-import Speakers from "./speakers/Speakers";
+// import Speakers from "./speakers/Speakers";
 import Sponsors from "./sponsors/Sponsors";
 import Footer from "./Footer";
 import TempSpeakers from "./temp_speaker";

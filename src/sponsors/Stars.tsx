@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import {Button, Image} from "@mantine/core";
-import star_img from "../assets/sponsors/star.svg";
 
 const genRandomNumber = (min: number, max: number) => {
     return Math.floor(Math.random() * (max - min) + min);
 }
-
-const $el = document.body;
 
 const makeStar = (mx: number, my: number, i: number) => {
 

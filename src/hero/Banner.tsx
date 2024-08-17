@@ -9,20 +9,22 @@ function Banner() {
     const [scrollPos, setScrollPos] = useState(0);
     const [fadeClass, setFadeClass] = useState('');
 
-    const handleScroll = () => {
-        const currentScrollPos = window.scrollY;
-        const triggerHeight = 0; // Adjust this value as needed
 
-        if (currentScrollPos > triggerHeight && currentScrollPos > scrollPos) {
-            setFadeClass('bannerFadeOut');
-        } else if (currentScrollPos < scrollPos) {
-            setFadeClass('bannerFadeIn');
-        }
-
-        setScrollPos(currentScrollPos);
-    };
 
     useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPos = window.scrollY;
+            const triggerHeight = 0; // Adjust this value as needed
+
+            if (currentScrollPos > triggerHeight && currentScrollPos > scrollPos) {
+                setFadeClass('bannerFadeOut');
+            } else if (currentScrollPos < scrollPos) {
+                setFadeClass('bannerFadeIn');
+            }
+
+            setScrollPos(currentScrollPos);
+        };
+
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -41,21 +43,22 @@ function Banner() {
                 ta="center"
             >
                 <Box
-                    bg="rgba(255,255,255,.85)"
+                    bg="rgba(255,250,240, .9)"
+                    bd="7px solid #FCEFD9"
                     pos="relative"
                     p="xl"
                     pb="0vh"
                     style={{borderRadius: "25px", zIndex: 10}}
                     className={`fade-element ${fadeClass}`}
                 >
-                <Image w="75vh" src={VHLogo} alt="VandyHacks Logo"/>
+                <Image w="575px" src={VHLogo} alt="VandyHacks Logo"/>
 
-                <div className="header_text" style={{color: '#ff4848'}}>
+                <div className="header_text" style={{color: '#fc3f3f'}}>
                     VANDYHACKS XI
                 </div>
 
                 <div className="body_text">
-                    <div className="hero_text" font-weight={"600px"}>Vanderbilt's Collegiate Hackathon</div>
+                    <div className="hero_text" font-weight={"900px"}>Vanderbilt's Collegiate Hackathon</div>
                     <div className="hero_text" font-weight={"600px"}>Sept. 28-29 | Nashville, TN</div>
                 </div>
 

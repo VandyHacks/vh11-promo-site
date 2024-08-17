@@ -1,10 +1,7 @@
 import React from "react";
-import {Image, Flex, Text, Button, Divider, Title} from "@mantine/core";
-import {useViewportSize} from "@mantine/hooks";
 import Event from "./Event";
 
 function Day1() {
-    const {height, width} = useViewportSize();
 
     return (
         <>

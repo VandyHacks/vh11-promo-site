@@ -1,5 +1,5 @@
 import React from "react";
-import {Box, Flex, Image, Text, Accordion, Grid} from "@mantine/core";
+import {Flex, Text } from "@mantine/core";
 import "./index.css";
 
 

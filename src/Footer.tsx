@@ -1,9 +1,7 @@
 import React from "react";
 import {Flex, Box, Anchor} from "@mantine/core";
-import { useViewportSize } from "@mantine/hooks";
 
 function Footer() {
-    const { height, width } = useViewportSize();
 
     return (
         <Flex bg="#253E63" p="20px" c="white" fz="20px" pos="relative" bottom="0px">

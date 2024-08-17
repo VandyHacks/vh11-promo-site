@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
-import {Image, Box, Button, Flex, Text} from "@mantine/core";
-import {useViewportSize} from "@mantine/hooks";
+import React from 'react';
+import {Image, Box} from "@mantine/core";
 import ducky_red from "../assets/hero/duck_racers-06.svg";
 import ducky_blue from "../assets/hero/duck_racers-04.svg";
 import ducky_green from "../assets/hero/duck_racers-10.svg";

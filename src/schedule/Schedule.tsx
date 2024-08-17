@@ -1,6 +1,5 @@
 import React from "react";
 import {Image, Box, Flex, ScrollArea, Divider} from "@mantine/core";
-import {useViewportSize} from "@mantine/hooks";
 import schedule_bg from "../assets/schedule/schedule_background.svg"
 import day_1 from "../assets/Day1.svg";
 import day_1_selected from "../assets/Day1Selected.svg";
@@ -48,7 +47,7 @@ function Schedule() {
                 <Image
                     pos="absolute"
                     ml="auto"
-                    h="140vh"
+                    h="980px"
                     bg="#C7FFF6"
                     style={{overflow: "hidden"}}
                     src={schedule_bg}
@@ -59,8 +58,8 @@ function Schedule() {
                     justify={"center"}
                     align="center"
                     ta="center"
-                    maw="120vh"
-                    mb="25vh"
+                    maw="900px"
+                    pb="105px"
                     style={{zIndex: "100"}}
                 >
                     <Flex justify="flex-end" gap="md" px="md" m="10vh 0vh -.85vh 100vh">
@@ -111,7 +110,7 @@ function Schedule() {
                         <br></br>
                         <ScrollArea h={500}>
                             <Flex direction="column" p="lg" gap="xs">
-                                {day == "day1" ? <Day1/> : <Day2/>}
+                                {day === "day1" ? <Day1/> : <Day2/>}
                             </Flex>
                         </ScrollArea>
                         <br></br>

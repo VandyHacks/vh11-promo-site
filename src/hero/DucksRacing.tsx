@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
-import {Image, Box, Button, Flex, Text} from "@mantine/core";
-import {useViewportSize} from "@mantine/hooks";
+import React from 'react';
+import {Image, Box} from "@mantine/core";
 import start_flag from "../assets/hero/flag_start_button.svg"
 import ducky_red from "../assets/hero/duck_racers-06.svg";
 import ducky_blue from "../assets/hero/duck_racers-04.svg";
@@ -14,6 +13,7 @@ function DucksRacing() {
         const blue = document.querySelector('.m_blue');
         const red = document.querySelector('.m_red');
         const yellow = document.querySelector('.m_yellow');
+        const starttext = document.querySelector('.start_text');
         if (green) {
             green.classList.add('animation-green');
         }
@@ -22,9 +22,13 @@ function DucksRacing() {
         }
         if (red) {
             red.classList.add('animation-red');
+            red.classList.remove('m_bumping_red');
         }
         if (yellow) {
             yellow.classList.add('animation-yellow');
+        }
+        if (starttext) {
+            starttext.classList.add('hidden');
         }
     };
 
@@ -32,26 +36,21 @@ function DucksRacing() {
         <div>
             <Box
                 pos="fixed"
-                top="40vh"
+                top="300px"
                 left="54%"
+                className="start_flag"
+                onClick={handleStartRace}
             >
-                <Text
-                    className="body_text"
-                    pos="absolute"
-                    c="white"
-                    fz="25px"
-                >
                 <Image
-                    w="20vh"
-                    className="start_flag"
+                    w="160px"
                     src={start_flag}
-                    onClick={handleStartRace}
                 />
+                <div className="start_text">
                     Start Race!
-                </Text>
+                </div>
             </Box>
             <Box
-                top="51.5vh"
+                top="385px"
                 pos="fixed"
                 w="100%"
                 style={{overflow: "hidden"}}
@@ -59,22 +58,22 @@ function DucksRacing() {
                 <div className="road_curve">
                     <div className="m_bumping" style={{animationDuration: '150ms'}}>
                         <div className="m_green">
-                            <Image pos="relative" w="24vh" src={ducky_green} alt="decappy"/>
+                            <Image pos="relative" w="185px" src={ducky_green} alt="decappy"/>
                         </div>
                     </div>
                     <div className="m_bumping_red">
                         <div className="m_red">
-                            <Image pos="relative" w="24vh" src={ducky_red} alt="big red"/>
+                            <Image pos="relative" w="185px" src={ducky_red} alt="big red"/>
                         </div>
                     </div>
                     <div className="m_bumping" style={{animationDuration: '200ms'}}>
                         <div className="m_yellow">
-                            <Image pos="relative" w="24vh" src={ducky_yellow} alt="he/him"/>
+                            <Image pos="relative" w="185px" src={ducky_yellow} alt="he/him"/>
                         </div>
                     </div>
                     <div className="m_bumping">
                         <div className="m_blue">
-                            <Image pos="relative" w="24vh" src={ducky_blue} alt="cool guy"/>
+                            <Image pos="relative" w="185px" src={ducky_blue} alt="cool guy"/>
                         </div>
                     </div>
                 </div>

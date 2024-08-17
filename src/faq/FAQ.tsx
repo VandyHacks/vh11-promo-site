@@ -1,9 +1,8 @@
 import React from "react";
-import {Box, Flex, Image, Text, Accordion, Grid} from "@mantine/core";
+import {Flex, Image, Text, Accordion, Grid} from "@mantine/core";
 import left_cloud from "../assets/faq/cloud_left.svg";
 import right_cloud from "../assets/faq/cloud_right.svg";
 import "./FAQ.css";
-import {IconClipboardData} from "@tabler/icons-react";
 import icon_one from "../assets/faq/faq_icons-01.svg";
 import icon_two from "../assets/faq/faq_icons-02.svg";
 import icon_three from "../assets/faq/faq_icons-03.svg";
@@ -100,7 +99,7 @@ const questionsData = [
 function selectQuestions(category: string) {
     return questionsData.map(
         (question) =>
-            category == question.category && (
+            category === question.category && (
                 <Accordion.Item
                     key={question.question}
                     value={question.question}

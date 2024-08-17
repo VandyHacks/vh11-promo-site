@@ -7,7 +7,6 @@ import aboutHill2 from "../assets/about/about_hill_2.svg";
 import aboutHill3 from "../assets/about/about_hill_3.svg";
 import aboutHill4 from "../assets/about/about_hill_4.svg";
 import about_road from "../assets/about/about_road.svg";
-import about_bottom from "../assets/about/about_bottom.svg";
 import ducky_red from "../assets/hero/ducky_red.svg";
 import flag from "../assets/about/transition_flag.svg";
 
@@ -21,9 +20,9 @@ function About() {
     const hill2Ref = useRef<HTMLImageElement>(null);
     const hill3Ref = useRef<HTMLImageElement>(null);
     const hill4Ref = useRef<HTMLImageElement>(null);
-    const roadRef = useRef<HTMLImageElement>(null);
-    const contentRef = useRef<HTMLDivElement>(null);
-    const duckyRef = useRef<HTMLImageElement>(null);
+    // const roadRef = useRef<HTMLImageElement>(null);
+    // const contentRef = useRef<HTMLDivElement>(null);
+    // const duckyRef = useRef<HTMLImageElement>(null);
 
     useEffect(() => {
         const handleResize = () => {
@@ -108,13 +107,13 @@ function About() {
                 w="100%"
                 ml="auto"
                 c="#C7FFF6"
-                mt="85vh"
+                mt="75vh"
                 bg="C7FFF6"
-                style={{ color: '#C7FFF6', marginBottom: "-45px" }}
+                style={{ color: '#C7FFF6' }}
                 alt="covers up hero in organic way"
             />
-            <Box ref={parallaxRef} style={{ 
-                height: '100vh', 
+            <Box ref={parallaxRef} style={{
+                height: '100vh',
                 position: 'relative',
                 background: `linear-gradient(#FFF, #C7FFF6 ${gradientProgress}%)`
             }}>
@@ -130,10 +129,11 @@ function About() {
                 align="center"
                 ta="center"
                 bg="#009e44"
-                style={{ 
-                    zIndex: 10, 
-                    position: 'relative', 
-                    backgroundColor: '#009e44' 
+                mt="-30px"
+                style={{
+                    zIndex: 10,
+                    position: 'relative',
+                    backgroundColor: '#009e44'
                 }}
             >
                 <div className="header_text" style={{color: 'white', zIndex: 10}}>
@@ -146,15 +146,14 @@ function About() {
                     m="10px 100px 20px 100px"
                     style={{zIndex: 10}}
                 >
-                    Code, collaborate, learn, explore, and network at Vanderbilt's official collegiate hackathon,
+                    Code, collaborate, learn, and network at Vanderbilt's official collegiate hackathon,
                     VandyHacks!
                     <br></br>
-                    As our 11th annual hackathon, this in-person event includes both student and company-led
+                    As one of the largest hackathons in the south, this in-person event includes both student and company-led
                     workshops, a career fair, games, events, full two-day catering, internship panels, speaker events,
-                    and the premier 24-hour hackathon with thousand of dollars in prizes.
-                    As the largest hackathons in the south, VandyHacks has had thousands of
-                    projects submitted by students over the course of 11 incredible years, and we hope you can join
-                    us in this experience this September, 28th-29th.
+                    and the premier 24-hour hackathon with thousand of dollars worth of prizes.
+                    VandyHacks has had thousands of projects submitted by students over the course of
+                    11 incredible years, and we hope you can join us in this September, 28th-29th.
                     <br></br>
                     We hope to see you on the racetrack at VandyHacks XI!
                 </Text>
@@ -166,7 +165,6 @@ function About() {
                 </div>
 
             </Flex>
-            <Image w="100%" bg="#C7FFF6" pb="15vh" src={about_bottom} alt="bottom of about page"/>
         </div>
     );
     //  <div style={{color: "#C7FFF6"}}>

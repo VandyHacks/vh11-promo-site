@@ -3,7 +3,6 @@ import {Image} from "@mantine/core";
 import {useViewportSize} from "@mantine/hooks";
 import Banner from "./Banner";
 import DucksRacing from "./DucksRacing";
-import DucksRacingBack from "./DucksRacingBack";
 import background from "../assets/hero/hero_background.svg";
 
 function Hero() {
@@ -14,15 +13,13 @@ function Hero() {
             <div style={{height: height, width: width, margin: 0, position: "relative", zIndex: 0}}>
                 <Image
                     pos="fixed"
-                    // w="190vh"
-                    h="112vh"
+                    h="850px"
                     style={{overflow: "hidden", zIndex: -5}}
                     src={background}
                     alt="hero background"
                 />
                 <Banner/>
                 <DucksRacing/>
-                {/*<DucksRacingBack />*/}
 
             </div>
         </>

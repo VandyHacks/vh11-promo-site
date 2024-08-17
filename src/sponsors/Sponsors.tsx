@@ -8,7 +8,6 @@ import LogosGrid from "./LogosGrid";
 import Stars from "./Stars";
 
 function Sponsors() {
-    const {height, width} = useViewportSize();
 
     return (
         <div style={{position: "relative", width: "100%"}}>
@@ -31,7 +30,7 @@ function Sponsors() {
                 </div>
                 <Stars />
                 <Image
-                    w="85vh"
+                    w="700px"
                     src={sponsors_banner}
                     style={{color: 'white', marginBottom: "20px", zIndex: 100}}
                     alt="ducks on pedestal over sponsors"
