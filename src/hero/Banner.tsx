@@ -42,9 +42,10 @@ function Banner() {
             >
                 <Box
                     bg="rgba(255,255,255,.8)"
+                    pos="relative"
                     p="xl"
                     pb="0vh"
-                    style={{borderRadius: "25px", zIndex: "100"}}
+                    style={{borderRadius: "25px", zIndex: 10}}
                     className={`fade-element ${fadeClass}`}
                 >
                 <Image w="75vh" src={VHLogo} alt="VandyHacks Logo"/>

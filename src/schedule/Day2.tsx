@@ -1,51 +1,91 @@
 import React from "react";
-import { Image, Flex, Text, Button, Divider, Title } from "@mantine/core";
-import { useViewportSize } from "@mantine/hooks";
+import {Image, Flex, Text, Button, Divider, Title} from "@mantine/core";
+import {useViewportSize} from "@mantine/hooks";
 import Event from "./Event";
 
 function Day2() {
-    const { height, width } = useViewportSize();
+    const {height, width} = useViewportSize();
 
     return (
         <>
             <Event
-                eventName="Check In Day 2"
-                icon="check"
-                location="The Wondry 1st Floor"
-                timeRange="9:30am-11:30pm"
-                category="important"
+                eventName="Midnight Snack: Krispy Kreme"
+                icon="star"
+                location="FGH Atrium"
+                timeRange="12:00am - 1:00am"
+                category="food"
                 difficulty=""
             />
             <Event
-                eventName="Opening Ceremony"
+                eventName="Breakfast"
                 icon="star"
-                location="The Wondry 1st Floor"
-                timeRange="12:00pm-3:00pm"
+                location="FGH Atrium"
+                timeRange="8:00am - 10:00am"
+                category="food"
+                difficulty=""
+            />
+            <Event
+                eventName="Internship Panel"
+                icon="share"
+                location="FGH 134"
+                timeRange="11:00am - 12:00pm"
+                category="events"
+                difficulty=""
+            />
+            <Event
+                eventName="Hacking Ends"
+                icon="star"
+                location=""
+                timeRange="12:00pm"
                 category="important"
                 difficulty=""
             />
             <Event
                 eventName="Lunch"
                 icon="star"
-                location="Lobby"
-                timeRange="11:00am-12:30pm"
+                location="FGH Atrium"
+                timeRange="12:00pm - 2:00pm"
                 category="food"
                 difficulty=""
             />
             <Event
-                eventName="Patient Safety Challenge"
-                icon="gear"
-                location="ESB 048"
-                timeRange="12:00pm-3:00pm"
-                category="workshops"
+                eventName="Career Fair"
+                icon="share"
+                location="FGH Atrium"
+                timeRange="12:00pm - 3:00pm"
+                category="events"
                 difficulty=""
             />
             <Event
-                eventName="Scavenger Hunt"
+                eventName="How to Demo Your Project"
                 icon="share"
-                location=""
-                timeRange="3:00pm-5:00pm"
+                location="FGH 132"
+                timeRange="12:30pm - 1:00pm"
                 category="events"
+                difficulty=""
+            />
+            <Event
+                eventName="Cup Stacking Race"
+                icon="share"
+                location="FGH 136"
+                timeRange="1:00pm - 1:30pm"
+                category="events"
+                difficulty=""
+            />
+            <Event
+                eventName="Judging"
+                icon="star"
+                location="FGH 134"
+                timeRange="1:00pm - 3:00pm"
+                category="important"
+                difficulty=""
+            />
+            <Event
+                eventName="Closing Ceremony"
+                icon="star"
+                location="FGH 134"
+                timeRange="5:00pm"
+                category="important"
                 difficulty=""
             />
         </>

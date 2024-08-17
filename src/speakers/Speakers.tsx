@@ -94,6 +94,7 @@ function Speakers() {
     return (
         <Box
             className="speakers-container"
+            pos="relative"
             style={{padding: "40px"}}
         >
             <p
