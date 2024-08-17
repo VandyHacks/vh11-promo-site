@@ -11,18 +11,19 @@ function Hero() {
 
     return (
         <>
-            <div style={{height: height, width: width, margin: 0}}>
+            <div style={{height: height, width: width, margin: 0, position: "relative", zIndex: 0}}>
                 <Image
                     pos="fixed"
                     // w="190vh"
                     h="112vh"
-                    style={{overflow: "hidden", zIndex: -10}}
+                    style={{overflow: "hidden", zIndex: -5}}
                     src={background}
                     alt="hero background"
                 />
                 <Banner/>
                 <DucksRacing/>
                 {/*<DucksRacingBack />*/}
+
             </div>
         </>
     );

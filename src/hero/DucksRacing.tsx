@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Image, Box, Button, Flex, Text} from "@mantine/core";
 import {useViewportSize} from "@mantine/hooks";
+import start_flag from "../assets/hero/flag_start_button.svg"
 import ducky_red from "../assets/hero/duck_racers-06.svg";
 import ducky_blue from "../assets/hero/duck_racers-04.svg";
 import ducky_green from "../assets/hero/duck_racers-10.svg";
@@ -28,12 +29,22 @@ function DucksRacing() {
     };
 
     return (
-        <>
+        <div>
+            <Image
+                pos="fixed"
+                top="40vh"
+                left="60%"
+                w="20vh"
+                className="start_flag"
+
+                src={start_flag}
+                onClick={handleStartRace}
+            />
             <Box
                 top="51.5vh"
                 pos="fixed"
                 w="100%"
-                style={{overflow: "hidden", zIndex: -5}}
+                style={{overflow: "hidden"}}
             >
                 <div className="road_curve">
                     <div className="m_bumping" style={{animationDuration: '150ms'}}>
@@ -58,23 +69,7 @@ function DucksRacing() {
                     </div>
                 </div>
             </Box>
-            <Button
-                variant="filled"
-                color="#fc3f3f"
-                size="xl"
-                ff="Helvetica"
-                fz="25px"
-                radius="lg"
-                pos="fixed"
-                top="92vh"
-                justify={"center"}
-                left="50%"
-                style={{transform: 'translateX(-50%)', zIndex: 0}}
-                onClick={handleStartRace}
-            >
-                Start Race!
-            </Button>;
-        </>
+        </div>
     );
 }
 

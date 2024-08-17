@@ -1,103 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1198 159">
-  <defs>
-    <style>
-      .cls-1 {
-        clip-path: url(#clippath);
-      }
-
-      .cls-2 {
-        fill: none;
-      }
-
-      .cls-2, .cls-3, .cls-4, .cls-5 {
-        stroke-width: 0px;
-      }
-
-      .cls-3 {
-        fill: #388279;
-      }
-
-      .cls-4 {
-        fill: #3c5453;
-      }
-
-      .cls-5 {
-        fill: #fff;
-      }
-    </style>
-    <clipPath id="clippath">
-      <rect class="cls-2" x="-.5" y="0" width="1198.84" height="301"/>
-    </clipPath>
-  </defs>
-  <g id="Layer_8" data-name="Layer 8">
-    <rect class="cls-5" x="-2.5" y="0" width="1203" height="317"/>
-  </g>
-  <g id="Layer_9" data-name="Layer 9">
-    <g class="cls-1">
-      <g>
-        <rect class="cls-4" x="-3.5" y="-51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="98.75" y="-51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="201" y="-51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="303.25" y="-51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="405.5" y="-51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="507.75" y="-51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="610" y="-51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="712.25" y="-51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="814.5" y="-51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="916.75" y="-51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="1019" y="-51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="1121.25" y="-51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="47.63" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="149.88" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="252.13" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="354.38" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="456.63" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="558.88" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="661.13" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="763.38" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="865.63" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="967.88" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="1070.13" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="1172.38" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="-3.5" y="51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="98.75" y="51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="201" y="51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="303.25" y="51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="405.5" y="51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="507.75" y="51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="610" y="51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="712.25" y="51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="814.5" y="51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="916.75" y="51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="1019" y="51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="1121.25" y="51" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="47.63" y="101.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="149.88" y="101.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="252.13" y="101.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="354.38" y="101.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="456.63" y="101.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="558.88" y="101.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="661.13" y="101.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="763.38" y="101.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="865.63" y="101.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="967.88" y="101.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="1070.13" y="101.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="1172.38" y="101.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="-3.5" y="152.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="98.75" y="152.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="201" y="152.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="303.25" y="152.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="405.5" y="152.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="507.75" y="152.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="610" y="152.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="712.25" y="152.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="814.5" y="152.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="916.75" y="152.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="1019" y="152.99" width="51.23" height="51.23"/>
-        <rect class="cls-4" x="1121.25" y="152.99" width="51.23" height="51.23"/>
-      </g>
-    </g>
-    <rect class="cls-3" x="-2.5" y="150" width="1201" height="14"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.9.4, SVG Export Plug-In . SVG Version: 9.03 Build 54784)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1171.98 159" style="enable-background:new 0 0 1171.98 159;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;}
+	.st2{fill:#FF756E;}
+	.st3{fill:#FFDA64;}
+	.st4{fill:#5CD6D6;}
+	.st5{fill:#6AC965;}
+	.st6{fill:#D7F1FF;}
+</style>
+<g id="Layer_8">
+	<rect x="-2.5" class="st0" width="1174.88" height="150.5"/>
+</g>
+<rect x="-0.5" class="st1" width="1198.84" height="301"/>
+<rect x="47.63" class="st2" width="51.23" height="51.23"/>
+<rect x="149.88" class="st3" width="51.23" height="51.23"/>
+<rect x="252.13" class="st4" width="51.23" height="51.23"/>
+<rect x="354.38" class="st2" width="51.23" height="51.23"/>
+<rect x="456.63" class="st5" width="51.23" height="51.23"/>
+<rect x="558.88" class="st2" width="51.23" height="51.23"/>
+<rect x="661.13" class="st5" width="51.23" height="51.23"/>
+<rect x="763.38" class="st5" width="51.23" height="51.23"/>
+<rect x="865.63" class="st4" width="51.23" height="51.23"/>
+<rect x="967.88" class="st2" width="51.23" height="51.23"/>
+<rect x="1070.13" class="st2" width="51.23" height="51.23"/>
+<rect x="-3.5" y="51" class="st4" width="51.23" height="51.23"/>
+<rect x="98.75" y="51" class="st2" width="51.23" height="51.23"/>
+<rect x="201" y="51" class="st5" width="51.23" height="51.23"/>
+<rect x="303.25" y="51" class="st3" width="51.23" height="51.23"/>
+<rect x="405.5" y="51" class="st3" width="51.23" height="51.23"/>
+<rect x="507.75" y="51" class="st4" width="51.23" height="51.23"/>
+<rect x="610" y="51" class="st4" width="51.23" height="51.23"/>
+<rect x="712.25" y="51" class="st2" width="51.23" height="51.23"/>
+<rect x="814.5" y="51" class="st3" width="51.23" height="51.23"/>
+<rect x="916.75" y="51" class="st3" width="51.23" height="51.23"/>
+<rect x="1019" y="51" class="st4" width="51.23" height="51.23"/>
+<rect x="1121.25" y="51" class="st5" width="51.23" height="51.23"/>
+<rect x="47.63" y="101.99" class="st3" width="51.23" height="51.23"/>
+<rect x="149.88" y="101.99" class="st4" width="51.23" height="51.23"/>
+<rect x="252.13" y="101.99" class="st2" width="51.23" height="51.23"/>
+<rect x="354.38" y="101.99" class="st4" width="51.23" height="51.23"/>
+<rect x="456.63" y="101.99" class="st5" width="51.23" height="51.23"/>
+<rect x="558.88" y="101.99" class="st3" width="51.23" height="51.23"/>
+<rect x="661.13" y="101.99" class="st5" width="51.23" height="51.23"/>
+<rect x="763.38" y="101.99" class="st4" width="51.23" height="51.23"/>
+<rect x="865.63" y="101.99" class="st2" width="51.23" height="51.23"/>
+<rect x="967.88" y="101.99" class="st5" width="51.23" height="51.23"/>
+<rect x="1070.13" y="101.99" class="st3" width="51.23" height="51.23"/>
+<rect x="-2.5" y="150" class="st6" width="1174.88" height="14"/>
 </svg>

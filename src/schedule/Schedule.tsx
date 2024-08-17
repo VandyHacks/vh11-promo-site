@@ -39,16 +39,17 @@ function Schedule() {
             <div
                 style={{
                     backgroundColor: "#C7FFF6",
-                    paddingTop: "6vh",
+                    paddingTop: "18vh",
                     display: "flex",
                     justifyContent: "center",
-                    zIndex: "-2",
+                    position: "relative",
                 }}
             >
                 <Image
                     pos="absolute"
                     ml="auto"
                     h="140vh"
+                    bg="#C7FFF6"
                     style={{overflow: "hidden"}}
                     src={schedule_bg}
                     alt="schedule background"

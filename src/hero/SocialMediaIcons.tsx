@@ -38,7 +38,7 @@ const icons = [
 function SocialMediaIcons() {
     return (
         <Flex
-            gap="lg"
+            gap="22px"
             m="2vh"
             direction="row"
             justify={"center"}

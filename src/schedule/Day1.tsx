@@ -12,7 +12,7 @@ function Day1() {
                 eventName="Check In"
                 icon="check"
                 location="FGH Atrium"
-                timeRange="9:30am-12:00pm"
+                timeRange="9:00am - 12:00pm"
                 category="important"
                 difficulty=""
             />
@@ -20,15 +20,7 @@ function Day1() {
                 eventName="Opening Ceremony"
                 icon="star"
                 location="FGH Atrium"
-                timeRange="11:00pm-11:30pm"
-                category="important"
-                difficulty=""
-            />
-            <Event
-                eventName="Hacking Begins"
-                icon="star"
-                location=""
-                timeRange="11:30pm"
+                timeRange="11:00pm - 11:30pm"
                 category="important"
                 difficulty=""
             />
@@ -36,7 +28,7 @@ function Day1() {
                 eventName="Team Matching"
                 icon="share"
                 location="FGH 110"
-                timeRange="11:30pm-12:00pm"
+                timeRange="11:30pm - 12:00pm"
                 category="events"
                 difficulty=""
             />
@@ -44,98 +36,114 @@ function Day1() {
                 eventName="Lunch"
                 icon="star"
                 location="FGH Atrium"
-                timeRange="11:30am-2:00pm"
+                timeRange="11:30am - 2:00pm"
                 category="food"
+                difficulty=""
+            />
+            <Event
+                eventName="Hacking Begins!"
+                icon="star"
+                location=""
+                timeRange="12:00pm"
+                category="important"
                 difficulty=""
             />
             <Event
                 eventName="Intro to Web-Dev"
                 icon="gear"
                 location="FGH 132"
-                timeRange="1:00pm-2:00pm"
+                timeRange="1:00pm - 2:00pm"
                 category="workshops"
                 difficulty="Easy"
             />
             <Event
-                eventName="Web-Scraping"
+                eventName="Mobile App Development"
                 icon="gear"
-                location="FGH 132"
-                timeRange="2:00pm-3:00pm"
-                category="workshops"
-                difficulty="Easy"
-            />
-            <Event
-                eventName="TypeRacing"
-                icon="share"
-                location=""
-                timeRange="2:30pm-4:30pm"
-                category="events"
-                difficulty=""
-            />
-            <Event
-                eventName="Ball Scraping"
-                icon="gear"
-                location="FGH 132"
-                timeRange="3:00pm-4:00pm"
+                location="FGH 136"
+                timeRange="2:00pm - 3:00pm"
                 category="workshops"
                 difficulty="Medium"
             />
             <Event
-                eventName="Ball Scraping"
+                eventName="TypeRacing"
+                icon="share"
+                location="FGH Atrium"
+                timeRange="2:30pm - 4:30pm"
+                category="events"
+                difficulty=""
+            />
+            <Event
+                eventName="MongoDB Databases"
                 icon="gear"
                 location="FGH 132"
-                timeRange="4:00pm-5:00pm"
+                timeRange="3:00pm - 4:00pm"
                 category="workshops"
-                difficulty="Hard"
+                difficulty="Medium"
+            />
+            <Event
+                eventName="CyberSecurity"
+                icon="gear"
+                location="FGH 136"
+                timeRange="4:00pm - 5:00pm"
+                category="workshops"
+                difficulty="Easy"
             />
             <Event
                 eventName="ChatGPT Wrapper How-to"
                 icon="gear"
                 location="FGH 132"
-                timeRange="5:00pm-6:00pm"
+                timeRange="5:00pm - 6:00pm"
                 category="workshops"
-                difficulty="Easy"
+                difficulty="Medium"
+            />
+            <Event
+                eventName="Data Viz & Bioinformatics"
+                icon="gear"
+                location="FGH 136"
+                timeRange="6:00pm - 7:00pm"
+                category="workshops"
+                difficulty="Hard"
             />
             <Event
                 eventName="Dinner"
                 icon="star"
                 location="FGH Atrium"
-                timeRange="7:00pm-9:00pm"
+                timeRange="7:00pm - 9:00pm"
                 category="food"
                 difficulty=""
             />
             <Event
-                eventName="GeoGuessr Competition"
+                eventName="Scooter Race"
                 icon="share"
-                location=""
-                timeRange="6:30pm-7:30pm"
+                location="FGH Atrium"
+                timeRange="7:00pm - 8:30pm"
                 category="events"
                 difficulty=""
             />
             <Event
-                eventName="Cup Stacking Race"
+                eventName="Relay Race Competition"
                 icon="share"
-                location=""
-                timeRange="7:30pm-8:00pm"
+                location="FGH Atrium"
+                timeRange="8:00pm - 9:00pm"
                 category="events"
                 difficulty=""
             />
             <Event
                 eventName="Mario Kart Racing"
                 icon="share"
-                location=""
-                timeRange="9:00pm-11:00pm"
+                location="FGH 132"
+                timeRange="9:00pm - 12:00pm"
                 category="events"
                 difficulty=""
             />
-                <Event
-                    eventName="Midnight Snack: Krispy Kreme"
-                    icon="star"
-                    location="FGH Atrium"
-                    timeRange="12:00am-1:00am"
-                    category="food"
-                    difficulty=""
-                />
+            <Event
+                eventName="Midnight Snack"
+                icon="star"
+                location="FGH Atrium"
+                timeRange="12:00am - 1:00am"
+                category="food"
+                difficulty=""
+            />
         </>
     );
 }
