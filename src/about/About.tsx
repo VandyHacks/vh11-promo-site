@@ -100,7 +100,7 @@ function About() {
     const hillStyles = getHillStyles(screenSize);
 
     return (
-        <div style={{ color: "#C7FFF6" }}>
+        <div style={{ color: "#C7FFF6", overflow: "hidden" }}>
             <Image
                 src={flag}
                 pos="relative"
@@ -109,7 +109,7 @@ function About() {
                 c="#C7FFF6"
                 mt="75vh"
                 bg="C7FFF6"
-                style={{ color: '#C7FFF6' }}
+                style={{ color: '#C7FFF6', overflow: "hidden" }}
                 alt="covers up hero in organic way"
             />
             <Box ref={parallaxRef} style={{
