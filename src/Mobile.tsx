@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {Image, Flex, Box, Text, Anchor, Divider, ScrollArea} from "@mantine/core";
 import VHLogo from "./assets/hero/VHlogo_XI.svg";
 import JoinButton from "../src/hero/JoinButton";
@@ -19,7 +19,6 @@ import day_2 from "./assets/Day2.svg";
 import day_1 from "./assets/Day1.svg";
 import day_2_selected from "./assets/Day2Selected.svg";
 import schedule_bg from "./assets/schedule/schedule_background.svg";
-import CategoryIndicator from "./schedule/CategoryIndicator";
 import Day1 from "./schedule/Day1";
 import Day2 from "./schedule/Day2";
 

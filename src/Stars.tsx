@@ -51,6 +51,7 @@ function Stars(props: StarProps) {
         }
 
         setStarElements(stars);
+    // eslint-disable-next-line
     }, []); // Empty dependency array ensures this runs only once
 
 
