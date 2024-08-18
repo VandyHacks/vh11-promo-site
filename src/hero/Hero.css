@@ -1,0 +1,77 @@
+
+.sub_text {
+    font-family: "Verdana", monospace;
+    padding-top: 0vh;
+    font-weight: 300;
+    font-size: 15px;
+    color: #888888;
+}
+
+.register {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 2px solid #fc3f3f;
+    background-color: transparent;
+    color: #fc3f3f;
+    transition: background-color .3s, color 0.3s, transform .3s;
+    cursor: pointer;
+}
+
+.register:hover {
+    background-color: #fc3f3f;
+    color: white;
+    transform: scale(1.025)
+}
+
+
+.bannerFadeOut {
+    animation: fadeOut 500ms ease 1 forwards running;
+}
+.bannerFadeIn {
+    animation: fadeIn 500ms ease 1 forwards running;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        pointer-events: none;
+    }
+    100% {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+.hero_star {
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    background-image: url('../assets/hero/star.svg');
+    background-size: cover;
+    background-position: center;
+    animation: twinkle ease-in infinite alternate;
+}
+
+@keyframes twinkle {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: .2;
+    }
+}

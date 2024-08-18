@@ -4,7 +4,7 @@ import "./Sponsors.css";
 import sponsors_banner from "../assets/sponsors/sponsors_banner.svg";
 import sunset from "../assets/sponsors/sponsors_sunrise.svg"
 import LogosGrid from "./LogosGrid";
-import Stars from "./Stars";
+import Stars from "../Stars";
 
 function Sponsors() {
 
@@ -24,10 +24,10 @@ function Sponsors() {
             >
                 <div
                     className="header_text"
-                    style={{color: "white", fontSize: "90px", margin: "0", position: "relative"}}>
+                    style={{color: "white", fontSize: "90px", margin: "0", position: "relative", zIndex: 100}}>
                     Sponsors
                 </div>
-                <Stars />
+                <Stars page="spons"/>
                 <Image
                     w="700px"
                     src={sponsors_banner}

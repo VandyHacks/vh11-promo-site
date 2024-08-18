@@ -2,19 +2,38 @@
     0% {
         transform: translateX(40%);
     }
+    25% {
+        transform: translateX(110%);
+    }
     100% {
         transform: translateX(110%);
     }
 }
+@keyframes start-loop-coolguy {
+    0% { transform: translateX(40%); }
+    100% { transform: translateX(110%); }
+}
 
 @keyframes infinite-loop {
-    0% { transform: translateX(-100%); }
+    0% { transform: translateX(-20%); }
+    30% { transform: translateX(100%); }
     100% { transform: translateX(100%); }
 }
 
 @keyframes infinite-loop-just-for-coolguy-because-hes-so-fucking-slow {
-    0% { transform: translateX(-10%); }
+    0% { transform: translateX(-20%); }
     100% { transform: translateX(100%); }
+}
+
+@keyframes infinite-loop-reverse {
+    0% { transform: translateX(110%); }
+    50% { transform: translateX(-20%); }
+    100% { transform: translateX(-20%); }
+}
+
+@keyframes infinite-loop-reverse-coolguy {
+    0% { transform: translateX(110%); }
+    100% { transform: translateX(-20%); }
 }
 
 @keyframes bumping {
@@ -43,10 +62,19 @@
 
 .m_green {
     transform: translateX(40%);
+    pointer-events: none;
+}
+.m_green_reverse {
+    margin-left: -100px;
 }
 .animation-green {
-    animation: start-loop 2s ease-in-out 1, infinite-loop 4s cubic-bezier(0,.19,.63,.48) infinite;
-    animation-delay: 0s, 2s;
+    animation: start-loop 10s ease-in-out 1, infinite-loop 10s cubic-bezier(.17,.48,.55,.25) infinite;
+    animation-delay: 0s, 10s;
+}
+.animation-green-reverse {
+    opacity: 1;
+    animation: infinite-loop-reverse 10s cubic-bezier(.36,.22,.68,.43) infinite;
+    animation-delay: 5s;
 }
 
 .m_red {
@@ -54,9 +82,17 @@
     transform: translateX(40%);
     margin-left: -80px;
 }
+.m_red_reverse {
+    margin-top: -40px;
+    margin-left: -100px;
+}
 .animation-red {
-    animation: start-loop 2s ease-out 1, infinite-loop 4s cubic-bezier(.01,.4,.59,.82) infinite;
-    animation-delay: 0s, 2s;
+    animation: start-loop 10s ease-out 1, infinite-loop 10s cubic-bezier(.34,.16,.21,.51) infinite;
+    animation-delay: 0s, 10s;
+}
+.animation-red-reverse {
+    animation: infinite-loop-reverse 10s cubic-bezier(.17,.48,.55,.25) infinite;
+    animation-delay: 5s;
 }
 
 .m_yellow {
@@ -64,9 +100,17 @@
     transform: translateX(40%);
     margin-left: -160px;
 }
+.m_yellow_reverse {
+    margin-top: -40px;
+    margin-left: -100px;
+}
 .animation-yellow {
-    animation: start-loop 3s ease-in 1, infinite-loop 5s linear infinite;
-    animation-delay: 1s, 4s;
+    animation: start-loop 10s ease-in 1, infinite-loop 9s linear infinite;
+    animation-delay: 1s, 11s;
+}
+.animation-yellow-reverse {
+    animation: infinite-loop-reverse 9.5s linear infinite;
+    animation-delay: 6s;
 }
 
 .m_blue {
@@ -74,9 +118,17 @@
     transform: translateX(40%);
     margin-left: -240px;
 }
+.m_blue_reverse {
+    margin-top: -40px;
+    margin-left: -100px;
+}
 .animation-blue {
-    animation: start-loop 12s linear 1, infinite-loop-just-for-coolguy-because-hes-so-fucking-slow 30s linear infinite;
-    animation-delay: 0s, 12s;
+    animation: start-loop-coolguy 15s linear 1, infinite-loop-just-for-coolguy-because-hes-so-fucking-slow 25s linear infinite;
+    animation-delay: 0s, 15s;
+}
+.animation-blue-reverse {
+    animation: infinite-loop-reverse-coolguy 30s linear infinite;
+    animation-delay: 15s;
 }
 
 
@@ -87,7 +139,7 @@
     animation: bumping 100ms ease-out infinite;
 }
 .road_curve {
-    /*animation: swerve-down 12s linear infinite;*/
+    pointer-events: none;
 }
 
 
@@ -123,7 +175,7 @@
 }
 .hidden {
     opacity: 0;
-    transition: opacity .5s ease;
+    transition: opacity .5s ease-out;
 }
 @keyframes hide {
     0% { opacity: 1; }

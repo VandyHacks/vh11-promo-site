@@ -1,9 +1,12 @@
 import React from "react";
 import {Image} from "@mantine/core";
 import {useViewportSize} from "@mantine/hooks";
+import Stars from "../Stars";
 import Banner from "./Banner";
 import DucksRacing from "./DucksRacing";
+import DucksRacingBack from "./DucksRacingBack";
 import background from "../assets/hero/hero_background.svg";
+import "./Hero.css";
 
 function Hero() {
     const {height, width} = useViewportSize();
@@ -19,7 +22,9 @@ function Hero() {
                     alt="hero background"
                 />
                 <Banner/>
+                <Stars page="hero" />
                 <DucksRacing/>
+                <DucksRacingBack />
 
             </div>
         </>

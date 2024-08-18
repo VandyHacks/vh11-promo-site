@@ -29,8 +29,6 @@ function Schedule() {
             default:
                 break;
         }
-
-
     }
 
     return (
@@ -47,7 +45,7 @@ function Schedule() {
                 <Image
                     pos="absolute"
                     ml="auto"
-                    h="980px"
+                    h="1080px"
                     bg="#C7FFF6"
                     style={{overflow: "hidden"}}
                     src={schedule_bg}

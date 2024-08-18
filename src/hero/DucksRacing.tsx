@@ -13,6 +13,11 @@ function DucksRacing() {
         const blue = document.querySelector('.m_blue');
         const red = document.querySelector('.m_red');
         const yellow = document.querySelector('.m_yellow');
+        const green_rev = document.querySelector('.m_green_reverse');
+        const blue_rev = document.querySelector('.m_blue_reverse');
+        const red_rev = document.querySelector('.m_red_reverse');
+        const yellow_rev = document.querySelector('.m_yellow_reverse');
+
         const starttext = document.querySelector('.start_text');
         if (green) {
             green.classList.add('animation-green');
@@ -27,6 +32,20 @@ function DucksRacing() {
         if (yellow) {
             yellow.classList.add('animation-yellow');
         }
+
+        if (green_rev) {
+            green_rev.classList.add('animation-green-reverse');
+        }
+        if (blue_rev) {
+            blue_rev.classList.add('animation-blue-reverse');
+        }
+        if (red_rev) {
+            red_rev.classList.add('animation-red-reverse');
+        }
+        if (yellow_rev) {
+            yellow_rev.classList.add('animation-yellow-reverse');
+        }
+
         if (starttext) {
             starttext.classList.add('hidden');
         }
