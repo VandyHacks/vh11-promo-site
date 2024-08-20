@@ -28,11 +28,9 @@ function About() {
         const handleResize = () => {
             if (window.innerWidth >= 1200) {
                 setScreenSize('large');
-            } else if (window.innerWidth >= 768) {
-                setScreenSize('medium');
             } else {
-                setScreenSize('small');
-            }
+                setScreenSize('medium');
+            };
         };
 
         handleResize(); // Initial call
@@ -47,7 +45,7 @@ function About() {
                     start: "top top",
                     end: "1600 bottom",
                     scrub: true,
-                    pin: true,
+                    pin: false,
                     onUpdate: (self) => {
                         setGradientProgress(100 - Math.ceil(self.progress * 100));
                     },
@@ -58,7 +56,7 @@ function About() {
             tl.to(hill2Ref.current, { y: "50%", ease: "none" }, 0);
             tl.to(hill3Ref.current, { y: "10%", ease: "none" }, 0);
             tl.to(hill4Ref.current, { y: "-5%", ease: "none" }, 0);
-            tl.to(contentRef.current, {y: "-200%", opacity: 1, ease: "none"}, 0);
+            tl.to(contentRef.current, {y: "-150%", opacity: 1, ease: "none"}, 0);
         });
 
         return () => {
@@ -131,7 +129,7 @@ function About() {
                     textAlign: 'center',
                     color: 'white',
                     zIndex: 10,
-                    opacity: 0,
+                    opacity: .8,
                     backgroundColor: 'rgba(0, 90, 120, 0.7)',
                     padding: '20px',
                     borderRadius: '15px',

@@ -40,7 +40,7 @@ function Sponsors() {
                     fz="30px"
                     c="#FCE147"
                 >
-                    And more! Coming soon ...
+                    Coming soon ...
                 </Text>
             </Flex>
         </div>

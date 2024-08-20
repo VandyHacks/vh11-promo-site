@@ -32,7 +32,7 @@ const sponsors = [
 function LogoMap() {
 
     return (
-        <Grid w="96%" grow gutter="xl" justify="center" align="flex-end">
+        <Grid w="96%" grow gutter="xl" justify="center" align="flex-end" c="#1E2C42">
             {sponsors.map((sponsor) => (
                 <Anchor href={sponsor.link} target="_blank" underline="never">
                     <div className="sponsor_logo">
@@ -47,6 +47,7 @@ function LogoMap() {
                 </Anchor>
 
             ))}
+            hey gamers {" <3"}
         </Grid>
     );
 }
