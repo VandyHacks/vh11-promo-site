@@ -1,5 +1,7 @@
 import React from "react";
 import {Image, Anchor, Grid} from "@mantine/core";
+// eslint-disable-next-line
+import {useViewportSize} from "@mantine/hooks";
 import "./Sponsors.css";
 import phosphorus from "../assets/sponsors_logos/phosphorus.svg"
 import capitalone from "../assets/sponsors_logos/Capital_One_logo.svg";
@@ -30,13 +32,15 @@ const sponsors = [
 ]
 
 function LogoMap() {
+    // eslint-disable-next-line
+    const {height, width} = useViewportSize();
 
     return (
         <Grid w="96%" grow gutter="xl" justify="center" align="flex-end" c="#1E2C42">
             {sponsors.map((sponsor) => (
                 <Anchor href={sponsor.link} target="_blank" underline="never">
                     <div className="sponsor_logo">
-                        <Grid.Col span={12}>
+                        <Grid.Col span={"auto"}>
                             <Image
                                 w="50vh"
                                 src={sponsor.name}

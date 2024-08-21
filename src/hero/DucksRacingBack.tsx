@@ -9,20 +9,20 @@ function DucksRacingBack() {
     return (
         <>
             <Box
-                top="19vh"
+                top="145px"
                 pos="fixed"
                 w="100%"
                 style={{overflow: "hidden", zIndex: -5}}
             >
                 <div className="road_curve">
                     <div className="m_green_reverse">
-                        <Image pos="relative" w="9vh" src={ducky_green} style={{transform: "scaleX(-1)"}} alt="decappy"/>
+                        <Image pos="relative" w="69px" src={ducky_green} style={{transform: "scaleX(-1)"}} alt="decappy"/>
                     </div>
                     <div className="m_red_reverse">
-                        <Image pos="relative" w="9vh" src={ducky_red} style={{transform: "scaleX(-1)"}} alt="big red"/>
+                        <Image pos="relative" w="69px" src={ducky_red} style={{transform: "scaleX(-1)"}} alt="big red"/>
                     </div>
                     <div className="m_yellow_reverse">
-                        <Image pos="relative" w="9vh" src={ducky_yellow} style={{transform: "scaleX(-1)"}} alt="he/him"/>
+                        <Image pos="relative" w="69px" src={ducky_yellow} style={{transform: "scaleX(-1)"}} alt="he/him"/>
                     </div>
                     {/*<div className="m_blue_reverse">*/}
                     {/*    <Image pos="relative" w="9vh" src={ducky_blue} style={{transform: "scaleX(-1)"}} alt="cool guy"/>*/}

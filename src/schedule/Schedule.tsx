@@ -47,6 +47,7 @@ function Schedule() {
                     ml="auto"
                     h="1080px"
                     bg="#C7FFF6"
+                    pb="50px"
                     style={{overflow: "hidden"}}
                     src={schedule_bg}
                     alt="schedule background"
@@ -115,6 +116,9 @@ function Schedule() {
                     </Flex>
                 </Flex>
             </div>
+            {/*<Box w="100%" mt="168px" h="100px" bg="#C7FFF6" pos="relative">*/}
+
+            {/*</Box>*/}
         </>
     );
 }

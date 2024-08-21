@@ -122,12 +122,12 @@ function FAQ() {
         <div style={{position: "relative"}}>
             <Image
                 src={left_cloud}
-                w="80vh"
+                w="535px"
                 pos="absolute"
             />
             <Image
                 src={right_cloud}
-                w="80vh"
+                w="535px"
                 pos="absolute"
                 right="0vh"
             />

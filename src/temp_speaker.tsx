@@ -6,7 +6,7 @@ import "./index.css";
 function TempSpeakers() {
     return (
         <Flex
-            top="22vh"
+            top="100px"
             w="100%"
             bg="#C7FFF6"
             pos="relative"
@@ -14,7 +14,7 @@ function TempSpeakers() {
             justify={"center"}
             align="center"
             ta="center"
-            p="100px 0vh 220px 0vh"
+            p="100px 0px 220px 0px"
         >
             <Text mt="-150px" className="header_text" fz="65px" c="#1f506e">Speakers</Text>
             <Text className="body_text" c="#1f506e" fz="30px">Coming Soon ...</Text>
