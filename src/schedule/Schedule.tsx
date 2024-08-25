@@ -1,6 +1,7 @@
 import React from "react";
 import {Image, Box, Flex, ScrollArea, Divider} from "@mantine/core";
-import schedule_bg from "../assets/schedule/schedule_background.svg"
+import schedule_bg from "../assets/schedule/schedule_background.svg";
+import bird from "../assets/schedule/bird.svg";
 import day_1 from "../assets/Day1.svg";
 import day_1_selected from "../assets/Day1Selected.svg";
 import day_2 from "../assets/Day2.svg";
@@ -9,6 +10,7 @@ import {useState} from "react";
 import CategoryIndicator from "./CategoryIndicator";
 import Day1 from "./Day1";
 import Day2 from "./Day2";
+import CloudsParting from "./CloudsParting";
 
 function Schedule() {
     const [day, setDay] = useState("day1");
@@ -36,10 +38,10 @@ function Schedule() {
             <div
                 style={{
                     backgroundColor: "#C7FFF6",
-                    paddingTop: "18vh",
-                    display: "flex",
+                    paddingTop: "100px",
                     justifyContent: "center",
                     position: "relative",
+                    zIndex: 100,
                 }}
             >
                 <Image
@@ -47,7 +49,6 @@ function Schedule() {
                     ml="auto"
                     h="1080px"
                     bg="#C7FFF6"
-                    pb="50px"
                     style={{overflow: "hidden"}}
                     src={schedule_bg}
                     alt="schedule background"
@@ -57,29 +58,34 @@ function Schedule() {
                     justify={"center"}
                     align="center"
                     ta="center"
-                    maw="900px"
-                    pb="105px"
-                    style={{zIndex: "100"}}
                 >
-                    <Flex justify="flex-end" gap="md" px="md" m="10vh 0vh -.85vh 100vh">
+                    <Flex justify="flex-end" gap="md" px="md" m="80px 0vh -.85vh 45%" style={{zIndex: 100}}>
                         <Image
-                            h="12vh"
+                            h="90px"
+                            w="auto"
                             src={day1Image}
                             onClick={() => switchDay("day1")}
                         />
                         <Image
-                            h="12vh"
+                            h="90px"
+                            w="auto"
                             src={day2Image}
                             onClick={() => switchDay("day2")}
                         />
+                        <Image src={bird} left="43%" top="23%" className="birds"/>
+                        <Image src={bird} left="47%" top="18%" style={{animationDelay: "1s"}} className="birds"/>
+                        <Image src={bird} left="53%" top="25%" style={{animationDelay: "1.5s"}} className="birds"/>
                     </Flex>
                     <Flex
                         direction="column"
-                        w="100%"
+                        w="70%"
+                        mih="600px"
+                        maw="900px"
                         className="main-container"
                         style={{
                             backgroundColor: "rgba(255,255,255,.7)",
                             borderRadius: "35px",
+                            zIndex: 100,
                         }}
                     >
                         <Flex
@@ -87,6 +93,7 @@ function Schedule() {
                             justify="space-between"
                             align="center"
                             p="4px 25px 5px 25px"
+                            wrap="wrap"
                         >
                             <Box c="#00629b" fz="50px" className="header_text">Schedule</Box>
                             <Flex gap="sm">

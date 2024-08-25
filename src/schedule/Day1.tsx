@@ -46,7 +46,7 @@ function Day1() {
                 difficulty=""
             />
             <Event
-                eventName="Intro to Web-Dev"
+                eventName="Intro to Web Development"
                 icon="gear"
                 location="FGH 132"
                 timeRange="1:00pm - 2:00pm"
@@ -70,7 +70,7 @@ function Day1() {
                 difficulty=""
             />
             <Event
-                eventName="MongoDB Databases"
+                eventName="ChatGPT Wrapper How-To"
                 icon="gear"
                 location="FGH 132"
                 timeRange="3:00pm - 4:00pm"
@@ -78,20 +78,20 @@ function Day1() {
                 difficulty="Medium"
             />
             <Event
+                eventName="MongoDB Databases"
+                icon="gear"
+                location="FGH 132"
+                timeRange="4:00pm - 5:00pm"
+                category="workshops"
+                difficulty="Medium"
+            />
+            <Event
                 eventName="CyberSecurity"
                 icon="gear"
                 location="FGH 136"
-                timeRange="4:00pm - 5:00pm"
-                category="workshops"
-                difficulty="Easy"
-            />
-            <Event
-                eventName="ChatGPT Wrapper How-to"
-                icon="gear"
-                location="FGH 132"
                 timeRange="5:00pm - 6:00pm"
                 category="workshops"
-                difficulty="Medium"
+                difficulty="Easy"
             />
             <Event
                 eventName="Data Viz & Bioinformatics"
@@ -126,10 +126,18 @@ function Day1() {
                 difficulty=""
             />
             <Event
+                eventName="Intern Panel"
+                icon="share"
+                location="FGH 132"
+                timeRange="9:00pm - 10:00pm"
+                category="workshops"
+                difficulty=""
+            />
+            <Event
                 eventName="Mario Kart Racing"
                 icon="share"
                 location="FGH 132"
-                timeRange="9:00pm - 12:00pm"
+                timeRange="10:00pm - 12:00pm"
                 category="events"
                 difficulty=""
             />

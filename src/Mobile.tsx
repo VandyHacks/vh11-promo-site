@@ -21,6 +21,10 @@ import day_2_selected from "./assets/Day2Selected.svg";
 import schedule_bg from "./assets/schedule/schedule_background.svg";
 import Day1 from "./schedule/Day1";
 import Day2 from "./schedule/Day2";
+import Schedule from "./schedule/Schedule";
+import CloudsParting from "./schedule/CloudsParting";
+import bird from "./assets/schedule/bird.svg";
+import CategoryIndicator from "./schedule/CategoryIndicator";
 
 const icons = [
     {
@@ -192,16 +196,16 @@ function Mobile() {
             <div
                 style={{
                     backgroundColor: "#C7FFF6",
-                    paddingTop: "10vh",
-                    display: "flex",
+                    paddingTop: "140px",
                     justifyContent: "center",
                     position: "relative",
+                    zIndex: 100,
                 }}
             >
                 <Image
                     pos="absolute"
                     ml="auto"
-                    h="980px"
+                    h="1080px"
                     bg="#C7FFF6"
                     style={{overflow: "hidden"}}
                     src={schedule_bg}
@@ -212,36 +216,64 @@ function Mobile() {
                     justify={"center"}
                     align="center"
                     ta="center"
-                    maw="900px"
-                    pb="105px"
-                    style={{zIndex: "100"}}
                 >
-                    <Flex justify="flex-end" gap="md" px="md" m="10vh 0vh -.85vh 100vh">
+                    <Flex justify="flex-end" gap="md" px="md" m="80px 0vh -.85vh 30%" style={{zIndex: 100}}>
                         <Image
-                            h="12vh"
+                            h="90px"
+                            w="auto"
                             src={day1Image}
                             onClick={() => switchDay("day1")}
                         />
                         <Image
-                            h="12vh"
+                            h="90px"
+                            w="auto"
                             src={day2Image}
                             onClick={() => switchDay("day2")}
                         />
+                        <Image src={bird} left="32%" top="25%" className="birds"/>
+                        <Image src={bird} left="29%" top="21%" style={{animationDelay: "1s"}} className="birds"/>
+                        <Image src={bird} left="17%" top="26%" style={{animationDelay: "1.5s"}} className="birds"/>
                     </Flex>
                     <Flex
                         direction="column"
-                        w="100%"
+                        w="70%"
+                        mih="600px"
+                        maw="900px"
                         className="main-container"
                         style={{
                             backgroundColor: "rgba(255,255,255,.7)",
                             borderRadius: "35px",
+                            zIndex: 100,
                         }}
                     >
-                            <Box c="#00629b" fz="40px" className="header_text">Schedule</Box>
+                        <Flex
+                            w="100%"
+                            justify="space-between"
+                            align="center"
+                            p="4px 25px 5px 25px"
+                            wrap="wrap"
+                        >
+                            <Box c="#00629b" fz="50px" className="header_text">Schedule</Box>
+                            <Flex gap="sm" wrap="wrap">
+                                <CategoryIndicator
+                                    category="events"
+                                    name="Events"
+                                />
+                                <CategoryIndicator
+                                    category="important"
+                                    name="Important"
+                                />
+                                <CategoryIndicator
+                                    category="workshops"
+                                    name="Workshops"
+                                />
+                                <CategoryIndicator category="food" name="Food"/>
+                            </Flex>
+                        </Flex>
                         <Divider/>
                         <br></br>
                         <ScrollArea h={500}>
-                            <Flex direction="column" p="xl" gap="xs">
+                            <Flex direction="column" p="lg" gap="xs">
                                 {day === "day1" ? <Day1/> : <Day2/>}
                             </Flex>
                         </ScrollArea>

@@ -19,10 +19,6 @@
     border-radius: 500px;
 }
 
-.main-container {
-    border-radius: 20px;
-}
-
 .events-main {
     border: solid 2px var(--events-primary-color);
     background-color: var(--events-bg-color);
@@ -152,4 +148,16 @@
 .food-indicator {
     color: white;
     background-color: var(--food-primary-color);
+}
+
+.birds {
+    position: absolute;
+    width: 80px;
+    z-index: -1;
+    animation: flap 3s ease-in-out infinite alternate;
+}
+
+@keyframes flap {
+    from { transform: translateY(0%); }
+    to { transform: translateY(-40%); }
 }
