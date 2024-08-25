@@ -10,7 +10,6 @@ import {useState} from "react";
 import CategoryIndicator from "./CategoryIndicator";
 import Day1 from "./Day1";
 import Day2 from "./Day2";
-import CloudsParting from "./CloudsParting";
 
 function Schedule() {
     const [day, setDay] = useState("day1");

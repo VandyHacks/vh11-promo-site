@@ -9,7 +9,6 @@ import aboutHill4 from "../assets/about/about_hill_4.svg";
 import about_road from "../assets/about/about_road.svg";
 import ducky_red from "../assets/hero/ducky_red.svg";
 import flag from "../assets/about/transition_flag.svg";
-import CloudsParting from "../schedule/CloudsParting";
 
 type ScreenSize = 'small' | 'medium' | 'large';
 

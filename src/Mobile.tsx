@@ -21,8 +21,6 @@ import day_2_selected from "./assets/Day2Selected.svg";
 import schedule_bg from "./assets/schedule/schedule_background.svg";
 import Day1 from "./schedule/Day1";
 import Day2 from "./schedule/Day2";
-import Schedule from "./schedule/Schedule";
-import CloudsParting from "./schedule/CloudsParting";
 import bird from "./assets/schedule/bird.svg";
 import CategoryIndicator from "./schedule/CategoryIndicator";
 
