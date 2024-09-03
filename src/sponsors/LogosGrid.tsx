@@ -36,7 +36,7 @@ function LogoMap() {
     return (
         <Grid w="96%" grow gutter="xl" justify="center" align="flex-end" c="#1E2C42">
             {sponsors.map((sponsor) => (
-                <Anchor href={sponsor.link} target="_blank" underline="never">
+                <Anchor key={sponsor.link} href={sponsor.link} target="_blank" underline="never">
                     <div className="sponsor_logo">
                         <Grid.Col span={"auto"}>
                             <Image
