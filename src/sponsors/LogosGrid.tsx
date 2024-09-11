@@ -40,7 +40,7 @@ function LogoMap() {
         }}>
             {sponsors.map((sponsor) => (
                 <div style={{flex: "1 1 auto", justifyContent: "center"}}>
-                    <a key={sponsor.link} href={sponsor.link} target="_blank" style={{textDecoration: "none"}}>
+                    <a key={sponsor.link} href={sponsor.link} target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
                         <div className="sponsor_logo" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
                             <img
                                 style={{ width: "50vh" }}
