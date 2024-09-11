@@ -1,17 +1,11 @@
 import React from "react";
-import {Image, Anchor, Grid} from "@mantine/core";
 import {useViewportSize} from "@mantine/hooks";
 import "./Sponsors.css";
 import phosphorus from "../assets/sponsors_logos/phosphorus.svg"
-import capitalone from "../assets/sponsors_logos/Capital_One_logo.svg";
+import vuIsis from "../assets/sponsors_logos/ISIS-logo.jpg"
 import wolfram from "../assets/sponsors_logos/Wolfram_Alpha_2022.svg";
 
 const sponsors = [
-    {
-        logo: capitalone,
-        link: "https://www.capitalonecareers.com/internship-programs",
-        span: 3,
-    },
     {
         logo: phosphorus,
         link: "https://phosphorus.io/",
@@ -22,11 +16,11 @@ const sponsors = [
         link: "https://www.wolframalpha.com/",
         span: 3,
     },
-    // {
-    //     logo: vuIsis,
-    //     link: "https://www.isis.vanderbilt.edu/",
-    //     span: 3,
-    // },
+    {
+        logo: vuIsis,
+        link: "https://www.isis.vanderbilt.edu/",
+        span: 3,
+    },
 ]
 
 function LogoMap() {
@@ -34,22 +28,30 @@ function LogoMap() {
     const {height, width} = useViewportSize();
 
     return (
-        <Grid w="96%" grow gutter="xl" justify="center" align="flex-end" c="#1E2C42">
+        <div
+            style={{
+                width: "96%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "flex-end",
+                color: "#1E2C42",
+                flexWrap: "wrap",
+                gap: "24px",
+        }}>
             {sponsors.map((sponsor) => (
-              <Grid.Col span={"auto"}>
-                <Anchor key={sponsor.link} href={sponsor.link} target="_blank" underline="never">
-                    <div className="sponsor_logo">
-                            <Image
-                                w="50vh"
+                <div style={{flex: "1 1 auto", justifyContent: "center"}}>
+                    <a key={sponsor.link} href={sponsor.link} target="_blank" style={{textDecoration: "none"}}>
+                        <div className="sponsor_logo" style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+                            <img
+                                style={{ width: "50vh" }}
                                 src={sponsor.logo}
                                 alt="sponsor logo"
                             />
-                    </div>
-                </Anchor>
-              </Grid.Col>
+                        </div>
+                    </a>
+                </div>
             ))}
-            hey gamers {" <3"}
-        </Grid>
+        </div>
     );
 }
 
