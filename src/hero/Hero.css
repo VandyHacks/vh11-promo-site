@@ -75,3 +75,45 @@
         opacity: .2;
     }
 }
+
+.VHlogo_flash {
+    overflow: hidden;
+}
+
+.VHlogo_flash::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 200%;
+    height: 50%;
+    background: linear-gradient(135deg, transparent 25%, rgba(255, 255, 255, 0.2) 50%, transparent 75%);
+    transform: rotate(30deg);
+    animation: flashAnimation 5s infinite;
+}
+
+@keyframes flashAnimation {
+    0% {
+        top: 100%;
+        left: -100%;
+    }
+    60% {
+        top: -100%;
+        left: 100%;
+    }
+    100% {
+        top: -100%;
+        left: 100%;
+    }
+}
+
+.social_icons_fixed {
+    font-size: 55px;
+    color: #555555;
+    transition: color 0.3s, transform .3s;
+}
+
+.social_icons_fixed:hover {
+    color: #fc3f3f;
+    transform: scale(1.1)
+}

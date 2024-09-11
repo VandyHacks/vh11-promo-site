@@ -35,7 +35,7 @@ const icons = [
     },
 ]
 
-function SocialMediaIcons() {
+function SocialMediaFixed() {
     return (
         <Flex
             gap="22px"
@@ -51,7 +51,7 @@ function SocialMediaIcons() {
                     rel="noreferrer"
                     style={{textDecoration: "none"}}
                 >
-                    <div className="social_icons" key={ico.name}>
+                    <div className="social_icons_fixed" key={ico.name}>
                         {React.createElement(ico.icon)}
                     </div>
                 </a>
@@ -60,4 +60,4 @@ function SocialMediaIcons() {
     );
 }
 
-export default SocialMediaIcons;
+export default SocialMediaFixed;

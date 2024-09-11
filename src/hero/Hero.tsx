@@ -5,8 +5,9 @@ import Stars from "../Stars";
 import Banner from "./Banner";
 import DucksRacing from "./DucksRacing";
 import DucksRacingBack from "./DucksRacingBack";
-import background from "../assets/hero/hero_background.svg";
+import background from "../assets/hero/hero_background_notext.svg";
 import "./Hero.css";
+import BannerFixed from "./FixedBanner";
 
 function Hero() {
     const {height, width} = useViewportSize();
@@ -23,6 +24,7 @@ function Hero() {
                 />
                 <Banner/>
                 <Stars page="hero" />
+                <BannerFixed />
                 <DucksRacing/>
                 <DucksRacingBack />
 

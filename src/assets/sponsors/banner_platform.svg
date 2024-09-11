@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="road" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 905.62">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f9da0e;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m21.07,806h1257.37c11.77,0,21.32,9.54,21.32,21.32v56.99c0,11.77-9.54,21.32-21.32,21.32H21.07c-11.77,0-21.32-9.54-21.32-21.32v-56.99c0-11.78,9.54-21.32,21.32-21.32Z"/>
+</svg>

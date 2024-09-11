@@ -18,15 +18,15 @@ function CloudsParting() {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: parallaxcloudRef.current,
-                start: "bottom 6000",  // Animation starts when top of trigger hits bottom of viewport
+                start: "bottom 5300",  // Animation starts when top of trigger hits bottom of viewport
                 end: "bottom top",   // Animation ends when bottom of trigger hits top of viewport
                 scrub: true,
                 pin: false,
             },
         });
 
-        tl.to(cloudleftRef.current, { x: "-150vh", ease: "none" }, 0);
-        tl.to(cloudrightRef.current, { x: "150vh", ease: "none" }, 0);
+        tl.to(cloudleftRef.current, { x: "-100vh", ease: "Power1.easeOut" }, 0);
+        tl.to(cloudrightRef.current, { x: "100vh", ease: "Power1.easeOut" }, 0);
 
         return () => {
             if (tl.scrollTrigger) tl.scrollTrigger.kill();
@@ -35,11 +35,11 @@ function CloudsParting() {
 
     return (
         <Box
-            top="400px"
+            top="75%"
             pos="absolute"
             w="100%"
             pb="300px"
-            style={{overflow: "hidden", zIndex: 1000}}
+            style={{overflow: "hidden", zIndex: 10000}}
         >
             <Image ref={cloudleftRef} src={cloudleft} pos="absolute" w="50%"/>
             <Image ref={cloudrightRef} src={cloudright} pos="absolute" w="50%" right="0px"/>

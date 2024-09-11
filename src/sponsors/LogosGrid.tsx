@@ -4,6 +4,7 @@ import {useViewportSize} from "@mantine/hooks";
 import "./Sponsors.css";
 import phosphorus from "../assets/sponsors_logos/phosphorus.svg"
 import capitalone from "../assets/sponsors_logos/Capital_One_logo.svg";
+import vuisis from "../assets/sponsors_logos/ISIS-logo.jpg";
 import wolfram from "../assets/sponsors_logos/Wolfram_Alpha_2022.svg";
 
 const sponsors = [
@@ -22,14 +23,14 @@ const sponsors = [
         link: "https://www.wolframalpha.com/",
         span: 3,
     },
-    // {
-    //     logo: vuIsis,
-    //     link: "https://www.isis.vanderbilt.edu/",
-    //     span: 3,
-    // },
+    {
+        logo: vuisis,
+        link: "https://www.isis.vanderbilt.edu/",
+        span: 3,
+    },
 ]
 
-function LogoMap() {
+function LogosGrid() {
     // eslint-disable-next-line
     const {height, width} = useViewportSize();
 
@@ -49,9 +50,8 @@ function LogoMap() {
                 </Anchor>
 
             ))}
-            hey gamers {" <3"}
         </Grid>
     );
 }
 
-export default LogoMap;
+export default LogosGrid;

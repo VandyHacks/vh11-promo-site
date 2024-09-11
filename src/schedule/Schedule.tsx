@@ -71,9 +71,9 @@ function Schedule() {
                             src={day2Image}
                             onClick={() => switchDay("day2")}
                         />
-                        <Image src={bird} left="43%" top="23%" className="birds"/>
-                        <Image src={bird} left="47%" top="18%" style={{animationDelay: "1s"}} className="birds"/>
-                        <Image src={bird} left="53%" top="25%" style={{animationDelay: "1.5s"}} className="birds"/>
+                        <Image src={bird} left="43%" top="21%" className="birds"/>
+                        <Image src={bird} left="47%" top="16%" style={{animationDelay: "1s"}} className="birds"/>
+                        <Image src={bird} left="53%" top="23%" style={{animationDelay: "1.5s"}} className="birds"/>
                     </Flex>
                     <Flex
                         direction="column"

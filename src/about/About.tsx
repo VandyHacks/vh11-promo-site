@@ -9,6 +9,7 @@ import aboutHill4 from "../assets/about/about_hill_4.svg";
 import about_road from "../assets/about/about_road.svg";
 import ducky_red from "../assets/hero/ducky_red.svg";
 import flag from "../assets/about/transition_flag.svg";
+import CloudsParting from "../schedule/CloudsParting";
 
 type ScreenSize = 'small' | 'medium' | 'large';
 
@@ -194,8 +195,9 @@ function About() {
                         <Image pos="absolute" w="15%" src={ducky_red} alt="Janice" style={{zIndex: 10}}/>
                     </div>
                 </div>
-                {/*<CloudsParting/>*/}
+                <CloudsParting/>
             </Flex>
+            <Box h="80px" bg="#C7FFF6" pos="relative"></Box>
         </div>
     );
     //  <div style={{color: "#C7FFF6"}}>
