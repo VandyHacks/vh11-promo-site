@@ -16,16 +16,16 @@ function Day1() {
             <Event
                 eventName="Opening Ceremony"
                 icon="star"
-                location="FGH Atrium"
-                timeRange="11:00pm - 11:30pm"
+                location="FGH 134"
+                timeRange="11:00am - 11:30am"
                 category="important"
                 difficulty=""
             />
             <Event
                 eventName="Team Matching"
                 icon="share"
-                location="FGH 110"
-                timeRange="11:30pm - 12:00pm"
+                location="FGH 132"
+                timeRange="11:30am - 12:00pm"
                 category="events"
                 difficulty=""
             />
@@ -48,7 +48,7 @@ function Day1() {
             <Event
                 eventName="Intro to Web Development"
                 icon="gear"
-                location="FGH 132"
+                location="FGH 134"
                 timeRange="1:00pm - 2:00pm"
                 category="workshops"
                 difficulty="Easy"
@@ -56,7 +56,7 @@ function Day1() {
             <Event
                 eventName="Mobile App Development"
                 icon="gear"
-                location="FGH 136"
+                location="FGH 134"
                 timeRange="2:00pm - 3:00pm"
                 category="workshops"
                 difficulty="Medium"
@@ -72,7 +72,7 @@ function Day1() {
             <Event
                 eventName="ChatGPT Wrapper How-To"
                 icon="gear"
-                location="FGH 132"
+                location="FGH 134"
                 timeRange="3:00pm - 4:00pm"
                 category="workshops"
                 difficulty="Medium"
@@ -80,7 +80,7 @@ function Day1() {
             <Event
                 eventName="MongoDB Databases"
                 icon="gear"
-                location="FGH 132"
+                location="FGH 134"
                 timeRange="4:00pm - 5:00pm"
                 category="workshops"
                 difficulty="Medium"
@@ -88,7 +88,7 @@ function Day1() {
             <Event
                 eventName="CyberSecurity"
                 icon="gear"
-                location="FGH 136"
+                location="FGH 134"
                 timeRange="5:00pm - 6:00pm"
                 category="workshops"
                 difficulty="Easy"
@@ -96,7 +96,7 @@ function Day1() {
             <Event
                 eventName="Data Viz & Bioinformatics"
                 icon="gear"
-                location="FGH 136"
+                location="FGH 134"
                 timeRange="6:00pm - 7:00pm"
                 category="workshops"
                 difficulty="Hard"
@@ -120,7 +120,7 @@ function Day1() {
             <Event
                 eventName="Relay Race Competition"
                 icon="share"
-                location="FGH Atrium"
+                location="FGH 132"
                 timeRange="8:00pm - 9:00pm"
                 category="events"
                 difficulty=""
@@ -128,7 +128,7 @@ function Day1() {
             <Event
                 eventName="Intern Panel"
                 icon="share"
-                location="FGH 132"
+                location="FGH 134"
                 timeRange="9:00pm - 10:00pm"
                 category="workshops"
                 difficulty=""
