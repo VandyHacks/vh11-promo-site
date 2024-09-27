@@ -22,6 +22,14 @@ function Day2() {
                 difficulty=""
             />
             <Event
+                eventName="Bob Ross MS-Painting"
+                icon="share"
+                location="FGH Atrium"
+                timeRange="11:00am - 12:00pm"
+                category="events"
+                difficulty=""
+            />
+            <Event
                 eventName="Hacking Ends"
                 icon="star"
                 location=""
@@ -38,26 +46,18 @@ function Day2() {
                 difficulty=""
             />
             <Event
-                eventName="Career Fair"
-                icon="share"
-                location="FGH 134"
-                timeRange="12:00pm - 3:00pm"
-                category="events"
-                difficulty=""
-            />
-            <Event
                 eventName="How to Demo Your Project"
                 icon="share"
                 location="FGH 129"
-                timeRange="12:30pm - 1:00pm"
+                timeRange="12:00pm - 12:30pm"
                 category="events"
                 difficulty=""
             />
             <Event
-                eventName="Cup Stacking Race"
+                eventName="Career Fair"
                 icon="share"
-                location="FGH Atrium"
-                timeRange="1:00pm - 1:30pm"
+                location="FGH 134"
+                timeRange="12:00pm - 2:00pm"
                 category="events"
                 difficulty=""
             />
