@@ -31,6 +31,11 @@ const questionsData = [
     },
     {
         category: "Hackathon Info",
+        question: "If I come in through driving, where can I park?",
+        answer: "We have parking from 25th Avenue Garage located on 2401 Highland Ave, Nashville, TN 37212.",
+    },
+    {
+        category: "Hackathon Info",
         question: "What if I have never been to a hackathon?",
         answer: "Dont fret! You will receive a full guide on how to hack a few days before the event, and there will also be VandyHacks staff, mentors, and other hackers to answer any questions you might have.",
     },
