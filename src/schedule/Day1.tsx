@@ -55,7 +55,7 @@ function Day1() {
       <Event
         eventName="Intro to Web Development"
         icon="gear"
-        location="FGH 132"
+        location="FGH 134"
         timeRange="1:00pm - 2:00pm"
         category="workshops"
         difficulty="Easy"
@@ -63,7 +63,7 @@ function Day1() {
       <Event
         eventName="Mobile App Development"
         icon="gear"
-        location="FGH 136"
+        location="FGH 134"
         timeRange="2:00pm - 3:00pm"
         category="workshops"
         difficulty="Medium"
@@ -79,7 +79,7 @@ function Day1() {
       <Event
         eventName="ChatGPT Wrapper How-To"
         icon="gear"
-        location="FGH 132"
+        location="FGH 134"
         timeRange="3:00pm - 4:00pm"
         category="workshops"
         difficulty="Medium"
@@ -87,7 +87,7 @@ function Day1() {
       <Event
         eventName="MongoDB Databases"
         icon="gear"
-        location="FGH 136"
+        location="FGH 134"
         timeRange="4:00pm - 5:00pm"
         category="workshops"
         difficulty="Medium"
