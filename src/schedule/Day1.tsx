@@ -87,7 +87,7 @@ function Day1() {
       <Event
         eventName="MongoDB Databases"
         icon="gear"
-        location="FGH 134"
+        location="FGH 136"
         timeRange="4:00pm - 5:00pm"
         category="workshops"
         difficulty="Medium"
