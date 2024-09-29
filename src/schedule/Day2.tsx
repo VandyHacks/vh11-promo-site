@@ -17,7 +17,7 @@ function Day2() {
                 eventName="Breakfast"
                 icon="star"
                 location="FGH Atrium"
-                timeRange="8:00am - 10:00am"
+                timeRange="8:30am - 10:00am"
                 category="food"
                 difficulty=""
             />
@@ -25,7 +25,7 @@ function Day2() {
                 eventName="Bob Ross MS-Painting"
                 icon="share"
                 location="FGH Atrium"
-                timeRange="11:00am - 12:00pm"
+                timeRange="10:00am - 11:00am"
                 category="events"
                 difficulty=""
             />
