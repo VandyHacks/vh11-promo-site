@@ -56,8 +56,8 @@ function Day2() {
             <Event
                 eventName="Career Fair"
                 icon="share"
-                location="FGH 134"
-                timeRange="12:00pm - 2:00pm"
+                location="FGH Atrium"
+                timeRange="12:00pm - 1:30pm"
                 category="events"
                 difficulty=""
             />
