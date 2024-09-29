@@ -73,7 +73,7 @@ function Day2() {
                 eventName="Closing Ceremony"
                 icon="star"
                 location="FGH 134"
-                timeRange="5:00pm"
+                timeRange="4:00pm"
                 category="important"
                 difficulty=""
             />
